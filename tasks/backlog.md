@@ -43,6 +43,16 @@
 - [ ] Review invariance, persistence, disturbance/recovery, and apparent-control results.
 - [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
 
+## TFL-UAS-DYNAMIC-001 v1.1
+
+- [x] Freeze operator-revision protocol/config and hashes.
+- [ ] Implement genuine per-pair motion correlation/coherence.
+- [ ] Implement true per-pair contiguous relation lifetimes.
+- [ ] Implement revised lagged persistence, reference/window distances, and D6 recovery/reformation.
+- [ ] Run v1.1 exploratory operator revision only; stop at review.
+- [ ] Review D4/D5/D6 and operator behavior before any extension.
+- [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
+
 ## 2026-08-17 — v1.1 exploratory validation stopped
 
 - v1.1 protocol/config and versioned artifacts were created without modifying v1.0.

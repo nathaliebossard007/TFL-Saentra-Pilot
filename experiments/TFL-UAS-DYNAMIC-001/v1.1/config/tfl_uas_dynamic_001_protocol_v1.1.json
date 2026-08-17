@@ -1,0 +1,18 @@
+{
+  "experiment": "TFL-UAS-DYNAMIC-001",
+  "protocol_version": "1.1",
+  "status": "frozen_protocol_only",
+  "lineage": {"predecessor_protocol": "../TFL-UAS-DYNAMIC-001_PROTOCOL_v1.0.md", "predecessor_config": "../config/tfl_uas_dynamic_001_protocol_v1.json", "simulator_change": false},
+  "seed_range": [101, 120],
+  "scenario_ids": ["D1_common_translation", "D2_coordinated_rotation_maneuver", "D3_independent_motion", "D4_apparent_block_stable_geometry", "D5_organized_expansion_contraction", "D6_perturbation_recovery"],
+  "windows_s": [5, 15, 30],
+  "lags_s": [1, 5, 15, 30],
+  "baseline_interval_s": [30, 60],
+  "normalization": {"distance_floor_m": 1.0, "distance_derivative_scale_mps": 12.0, "relative_velocity_scale_mps": 8.0, "correlation_variance_floor": 1e-09},
+  "pair_similarity": {"stable_similarity_min": 0.8, "motion_correlation_min": 0.7, "formula": "exp(-mean((z_t-z_reference)^2)/2)"},
+  "lifetime": {"minimum_contiguous_duration_s": 1},
+  "recovery": {"disturbance_start_s": 70, "disturbance_end_s": 100, "reference_tolerance_fraction": 0.2, "minimum_recovery_duration_s": 15, "minimum_reformed_pairs": 5, "reformation_duration_s": 15, "unmet_value_s": 180},
+  "classifier": null,
+  "learned_parameters": false,
+  "confirmatory_authorization": false
+}

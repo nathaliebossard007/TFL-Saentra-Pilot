@@ -76,6 +76,15 @@
 - Descriptive diagnostics were recorded, but no GO/PARTIAL GO/NO-GO/INCONCLUSIVE decision was made.
 - Automatic continuation stopped at `experiments/TFL-UAS-DYNAMIC-001/REVIEW_REQUIRED.md` before any extension.
 
+## 2026-08-17 — DYNAMIC-001 v1.1 operator-revision protocol frozen
+
+- Frozen a measurement-only v1.1 revision after review identified threshold-count lag persistence and non-pairwise lifetime defects in v1.0.
+- Protocol SHA-256: `66c46c20fb0bcf1523523c83c5881c05e837392da6f41fbb8c021c5dd9a82187`.
+- Configuration SHA-256: `dd33477f24c4c497a9775ce438b478d2b4e6a3cb5236de0d21b76b6f626bbb54`.
+- v1.0 simulator, protocol, configuration, raw states, diagnostics, and review record remain unchanged.
+- Registered genuine per-pair motion correlation, per-pair lifetimes, revised lagged persistence, reference/window distances, and D6 recovery/reformation rules.
+- No v1.1 implementation or execution occurred in the freeze task. The next task is implementation exactly as frozen.
+
 ## 2026-08-17 — TFL-UAS-SPATIAL-001 protocol v1.0 frozen
 
 - Frozen a separate spatial relational-state persistence protocol before implementation.

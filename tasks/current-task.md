@@ -1,5 +1,19 @@
 # Current Task
 
+Implement **TFL-UAS-DYNAMIC-001 v1.1 exploratory operator revision exactly as frozen**, using exploratory data only, then stop at `REVIEW_REQUIRED`.
+
+The v1.1 protocol-freeze task is complete. Do not modify v1.0 or v1.1 frozen
+protocol/config files, do not tune D1–D6, and do not execute confirmatory or
+held-out seeds.
+
+Frozen v1.1 files:
+
+- `experiments/TFL-UAS-DYNAMIC-001/v1.1/TFL-UAS-DYNAMIC-001_PROTOCOL_v1.1.md`
+- `experiments/TFL-UAS-DYNAMIC-001/v1.1/config/tfl_uas_dynamic_001_protocol_v1.1.json`
+- `experiments/TFL-UAS-DYNAMIC-001/v1.1/PROTOCOL_FREEZE.md`
+
+The prior protocol-freeze task description follows for provenance:
+
 Prepare and freeze **TFL-UAS-DYNAMIC-001 v1.1 — Motion Correlation Operator Revision** before implementation.
 
 Preserve DYNAMIC-001 v1.0 unchanged as an exploratory record. Do not modify its frozen protocol, config, implementation, raw states, diagnostics, or review record.
