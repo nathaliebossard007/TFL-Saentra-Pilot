@@ -1,0 +1,16 @@
+{
+  "protocol_version": "1.1",
+  "status": "exploratory_only",
+  "training_seeds": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110],
+  "test_seeds": [111, 112, 113, 114, 115, 116, 117, 118, 119, 120],
+  "forbidden_seeds": {"confirmatory": [201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220], "held_out": [301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320]},
+  "area_m": [10000, 10000],
+  "duration_s": 180,
+  "dt_s": 1,
+  "object_count": 4,
+  "formation_offset_m": 240,
+  "shared_scale_amplitude": 0.08,
+  "independent_phase_offsets_rad": [0.0, 1.5707963267948966, 3.141592653589793, 4.71238898038469],
+  "position_noise_std_m": [8, 8, 4],
+  "classifier": {"type": "sklearn.linear_model.LogisticRegression", "C": 1.0, "solver": "liblinear", "max_iter": 2000, "threshold": 0.5}
+}

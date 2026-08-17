@@ -108,3 +108,10 @@ Preserve REVIEW_REQUIRED.md as the historical v1.0 review record unless a clearl
 At completion, set the next task to:
 
 **Review TFL-UAS-001B v1.1 exploratory validation and parameter freeze before confirmatory authorization.**
+
+## Current gate
+
+REVIEW_REQUIRED: v1.1 anti-triviality validation failed. Mean pairwise distance
+and group extent each reached one-variable balanced accuracy 1.0. Do not
+interpret A/B/C metrics, tune automatically, or execute further seeds. See
+`experiments/TFL-UAS-001B/v1.1/REVIEW_REQUIRED_v1.1.json`.

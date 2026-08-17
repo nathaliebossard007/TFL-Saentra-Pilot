@@ -46,3 +46,11 @@
 - v1.1 must define a proper supervised training boundary for Model A while keeping test/confirmatory ground truth evaluator-only until predictions are written.
 - Only exploratory v1.1 work is authorized. Confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited until a subsequent explicit review authorizes them.
 - A repeated anti-trivial-separation failure must trigger another review gate rather than further automatic tuning.
+
+## 2026-08-17 — TFL-UAS-001B v1.1 exploratory gate failed
+
+- v1.1 was frozen with new hashes and versioned artifacts; v1.0 remained unchanged.
+- The supervised train/test boundary was implemented and test truth was loaded only after prediction serialization.
+- Validation failed because `mean_pairwise_distance` and `group_extent` each reached one-variable balanced accuracy 1.0.
+- No A/B/C performance interpretation or scientific decision was made. Confirmatory 201–220 and held-out 301–320 remain prohibited.
+- Conservative action: stop at `REVIEW_REQUIRED_v1.1.json` for human review; do not continue automatic simulator tuning.

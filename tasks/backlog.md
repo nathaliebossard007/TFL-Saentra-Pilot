@@ -31,3 +31,12 @@
 - Group merge.
 - Member departure.
 - degraded observation organization tests.
+
+## 2026-08-17 — v1.1 exploratory validation stopped
+
+- v1.1 protocol/config and versioned artifacts were created without modifying v1.0.
+- Training seeds 101–110 and exploratory test seeds 111–120 were used only in the v1.1 namespace; no confirmatory or held-out seeds ran.
+- The supervised train/test boundary and raw-output ordering checks passed.
+- The anti-triviality gate failed again: mean pairwise distance and group extent each had one-variable balanced accuracy 1.0.
+- Automatic continuation stopped at `REVIEW_REQUIRED_v1.1.json`; A/B/C metrics are not interpreted.
+- Next action is human review; no confirmatory authorization.
