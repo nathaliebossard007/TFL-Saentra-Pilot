@@ -157,3 +157,11 @@
 - No simulator change, classifier, benchmark, confirmatory, or held-out execution occurred.
 - Repository guards, schema/leakage, determinism, and frozen-hash checks passed.
 - Automatic continuation stopped at `experiments/TFL-UAS-DYNAMIC-001/v1.2/REVIEW_REQUIRED.md`; no scientific decision was made.
+
+## 2026-08-17 — DYNAMIC-001 v1.2.1 diagnostic-correction protocol frozen
+
+- Froze a narrow correction for invalid pre-window indexing and trivial D6 pair reformation detection.
+- v1.2 operator, simulator, data, raw outputs, diagnostics, and review record remain unchanged.
+- Protocol SHA-256: `cfce052a7ac3b5c00f5f8a2033f4979b3a31d76453b665e365c955102791ad53`.
+- Configuration SHA-256: `c414016be1a4935777a588481f85b6f132f610a5a59333daa6c521f6efe3eb`.
+- No implementation or execution occurred in this freeze task; the next task is v1.2.1 exploratory implementation followed by REVIEW_REQUIRED.

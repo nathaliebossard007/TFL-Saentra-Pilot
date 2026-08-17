@@ -144,3 +144,13 @@ if ([string]::IsNullOrWhiteSpace($dynamicV12ProtocolExpected) -or [string]::IsNu
 if ((Get-FileHash $dynamicV12Protocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV12ProtocolExpected) { throw "DYNAMIC-001 v1.2 protocol hash mismatch." }
 if ((Get-FileHash $dynamicV12Config -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV12ConfigExpected) { throw "DYNAMIC-001 v1.2 configuration hash mismatch." }
 Write-Output "DYNAMIC-001 v1.2 protocol freeze hash check passed."
+
+$dynamicV121Protocol = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-DYNAMIC-001\v1.2.1\TFL-UAS-DYNAMIC-001_PROTOCOL_v1.2.1.md"
+$dynamicV121Config = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-DYNAMIC-001\v1.2.1\config\tfl_uas_dynamic_001_protocol_v1.2.1.json"
+$dynamicV121Freeze = Get-Content -Raw (Join-Path $PSScriptRoot "..\experiments\TFL-UAS-DYNAMIC-001\v1.2.1\PROTOCOL_FREEZE.md")
+$dynamicV121ProtocolExpected = ([regex]::Match($dynamicV121Freeze, 'Protocol SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+$dynamicV121ConfigExpected = ([regex]::Match($dynamicV121Freeze, 'Config SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+if ([string]::IsNullOrWhiteSpace($dynamicV121ProtocolExpected) -or [string]::IsNullOrWhiteSpace($dynamicV121ConfigExpected)) { throw "DYNAMIC-001 v1.2.1 freeze hashes are missing or malformed." }
+if ((Get-FileHash $dynamicV121Protocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV121ProtocolExpected) { throw "DYNAMIC-001 v1.2.1 protocol hash mismatch." }
+if ((Get-FileHash $dynamicV121Config -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV121ConfigExpected) { throw "DYNAMIC-001 v1.2.1 configuration hash mismatch." }
+Write-Output "DYNAMIC-001 v1.2.1 protocol freeze hash check passed."

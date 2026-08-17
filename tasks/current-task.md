@@ -1,6 +1,18 @@
 # Current Task
 
-Prepare and freeze **TFL-UAS-DYNAMIC-001 v1.2.1 — Diagnostic Correction** before implementation.
+Implement **TFL-UAS-DYNAMIC-001 v1.2.1 diagnostic correction exactly as frozen** on the unchanged 120 exploratory samples, then stop at `REVIEW_REQUIRED`.
+
+The v1.2.1 protocol/config freeze is complete. Do not execute this task's
+implementation until the frozen artifacts below are used exactly; do not
+modify v1.0, v1.1, v1.2, or the v1.2.1 protocol/config.
+
+Frozen v1.2.1 files:
+
+- `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/TFL-UAS-DYNAMIC-001_PROTOCOL_v1.2.1.md`
+- `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/config/tfl_uas_dynamic_001_protocol_v1.2.1.json`
+- `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/PROTOCOL_FREEZE.md`
+
+The prior freeze task follows for provenance.
 
 Preserve DYNAMIC-001 v1.0, v1.1, and v1.2 frozen protocols, configs, implementations, raw states, diagnostics, and review records unchanged.
 

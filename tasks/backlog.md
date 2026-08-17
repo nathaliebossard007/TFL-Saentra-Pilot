@@ -63,6 +63,14 @@
 - [ ] Review D1/D2 invariance, D4 hard-control behavior, D5 expansion, and D6 recovery.
 - [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
 
+## TFL-UAS-DYNAMIC-001 v1.2.1
+
+- [x] Freeze diagnostic-correction protocol/config and hashes.
+- [ ] Implement valid window indexing correction.
+- [ ] Implement non-trivial D6 pair reformation/recovery correction.
+- [ ] Run v1.2.1 exploratory correction only; stop at review.
+- [ ] Do not execute classifier, benchmark, confirmatory, or held-out extensions.
+
 ## 2026-08-17 — DYNAMIC-001 v1.2 exploratory run stopped at review
 
 - Applied the frozen v1.2 operator to unchanged v1.0 D1–D6 data for seeds 101–120.
