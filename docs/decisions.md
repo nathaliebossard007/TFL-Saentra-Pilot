@@ -85,6 +85,14 @@
 - Registered genuine per-pair motion correlation, per-pair lifetimes, revised lagged persistence, reference/window distances, and D6 recovery/reformation rules.
 - No v1.1 implementation or execution occurred in the freeze task. The next task is implementation exactly as frozen.
 
+## 2026-08-17 — DYNAMIC-001 v1.1 exploratory run stopped at review
+
+- Applied the frozen operator-only v1.1 revision to unchanged v1.0 D1–D6 track data for seeds 101–120 and generated 120 revised raw state files.
+- Evaluator metadata was loaded only after raw revised states were serialized.
+- Genuine per-pair correlations, contiguous lifetimes, revised lag persistence, reference/window distances, and D6 recovery/reformation diagnostics were produced.
+- No simulator change, classifier, benchmark, confirmatory, or held-out execution occurred.
+- No GO/PARTIAL GO/NO-GO/INCONCLUSIVE decision was made; automatic continuation stopped at `experiments/TFL-UAS-DYNAMIC-001/v1.1/REVIEW_REQUIRED.md`.
+
 ## 2026-08-17 — TFL-UAS-SPATIAL-001 protocol v1.0 frozen
 
 - Frozen a separate spatial relational-state persistence protocol before implementation.

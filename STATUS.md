@@ -44,10 +44,11 @@ Status — OPERATOR REVISION AUTHORIZED
 Purpose — Motion Correlation Operator Revision
 Scope — measurement/operator revision only; D1–D6 conceptually unchanged; no simulator tuning to improve separation
 Protocol/config — FROZEN
-Implementation/execution — EXPLORATORY ONLY, NOT YET STARTED
+Implementation/execution — COMPLETED FOR EXPLORATORY RUN ONLY
+Validation — REVIEW_REQUIRED
 
 Current operational task:
-Implement TFL-UAS-DYNAMIC-001 v1.1 exploratory operator revision exactly as frozen, then stop at REVIEW_REQUIRED.
+REVIEW_REQUIRED — review DYNAMIC-001 v1.1 per-pair operators, D4 behavior, and D6 recovery diagnostics before any extension.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, or confirmatory extension is authorized.

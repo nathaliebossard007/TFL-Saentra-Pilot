@@ -46,12 +46,19 @@
 ## TFL-UAS-DYNAMIC-001 v1.1
 
 - [x] Freeze operator-revision protocol/config and hashes.
-- [ ] Implement genuine per-pair motion correlation/coherence.
-- [ ] Implement true per-pair contiguous relation lifetimes.
-- [ ] Implement revised lagged persistence, reference/window distances, and D6 recovery/reformation.
-- [ ] Run v1.1 exploratory operator revision only; stop at review.
+- [x] Implement genuine per-pair motion correlation/coherence.
+- [x] Implement true per-pair contiguous relation lifetimes.
+- [x] Implement revised lagged persistence, reference/window distances, and D6 recovery/reformation.
+- [x] Run v1.1 exploratory operator revision only; stop at review.
 - [ ] Review D4/D5/D6 and operator behavior before any extension.
 - [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
+
+## 2026-08-17 — DYNAMIC-001 v1.1 exploratory run stopped at review
+
+- Applied the frozen operator-only revision to unchanged v1.0 D1–D6 exploratory track data: 120 samples, seeds 101–120.
+- Wrote revised raw states before evaluator metadata; no simulator change, classifier, benchmark, confirmatory, or held-out execution occurred.
+- Genuine per-pair motion correlation, contiguous lifetimes, lag persistence, reference/window distances, and D6 recovery/reformation were serialized.
+- Created `experiments/TFL-UAS-DYNAMIC-001/v1.1/REVIEW_REQUIRED.md`; no scientific decision or extension is authorized.
 
 ## 2026-08-17 — v1.1 exploratory validation stopped
 
