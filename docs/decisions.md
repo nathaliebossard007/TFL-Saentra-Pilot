@@ -54,3 +54,16 @@
 - Validation failed because `mean_pairwise_distance` and `group_extent` each reached one-variable balanced accuracy 1.0.
 - No A/B/C performance interpretation or scientific decision was made. Confirmatory 201–220 and held-out 301–320 remain prohibited.
 - Conservative action: stop at `REVIEW_REQUIRED_v1.1.json` for human review; do not continue automatic simulator tuning.
+
+## 2026-08-17 — Open TFL-UAS-SPATIAL-001 exploratory branch
+
+- Scientific review concludes that repeated 001B anti-triviality failures indicate a likely perspective problem with group-label classification, not a justification for indefinite simulator tuning.
+- Preserve TFL-UAS-001B v1.0/v1.1 unchanged as failed-validation records of the classification path. Do not reinterpret them as evidence for or against relational-state persistence.
+- Open a separate exploratory experiment: `TFL-UAS-SPATIAL-001 — Spatial Relational State Persistence`.
+- Primary question: can persistent relational spatial organization be detected independently of absolute position, orientation, scale, and predefined group labels?
+- Primary observable shifts from class prediction to unlabeled relational-state construction and persistence under transformations.
+- The first test must distinguish organization-preserving translation/rotation from independent motion, apparent spatial organization, and perturbation/recovery controls.
+- Maintain separate rigid-relational and scale-normalized shape states where useful so physical expansion/contraction is not accidentally erased.
+- No classifier is required in the primary SPATIAL-001 test. Graph/Laplacian quantities remain candidate deterministic diagnostics and must earn any role empirically.
+- SPATIAL-001 protocol v1.0 must be frozen before implementation. Exploratory execution must stop at review before any benchmark/classification/confirmatory extension.
+- 001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
