@@ -44,15 +44,15 @@ Review finding — genuine pair operators improved D3/D6 sensitivity and preserv
 Scientific interpretation — NO GO/NO-GO DECISION; operator hierarchy remains under study
 
 TFL-UAS-DYNAMIC-001 v1.2:
-Status — SPATIOTEMPORAL RELATIONAL LAPLACIAN REVISION AUTHORIZED
+Status — EXPLORATORY RUN COMPLETED; REVIEW REQUIRED
 Purpose — couple relational motion to time-integrated relative spatial occupancy
 Scope — operator revision only; reuse unchanged D1–D6 exploratory data; no simulator tuning
 Protocol/config — FROZEN
-Implementation/execution — EXPLORATORY ONLY, NOT YET STARTED
+Implementation/execution — COMPLETED FOR SEEDS 101–120 ONLY
 Primary operator — time-integrated relative-occupancy graph and normalized Laplacian with spectrum/projector diagnostics
 
 Current operational task:
-Implement TFL-UAS-DYNAMIC-001 v1.2 exploratory spatiotemporal relational Laplacian exactly as frozen, then stop at REVIEW_REQUIRED.
+Review `experiments/TFL-UAS-DYNAMIC-001/v1.2/REVIEW_REQUIRED.md`; no extension or scientific decision is authorized.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.

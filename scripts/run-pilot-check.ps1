@@ -52,7 +52,7 @@ foreach ($path in $required) {
 
 $status = Get-Content -Raw "STATUS.md"
 $current = Get-Content -Raw "tasks/current-task.md"
-if ($status -notmatch "No confirmatory or held-out execution has started|Confirmatory/Held-out execution — NOT AUTHORIZED|confirmatory seeds .* remain prohibited") {
+if ($status -notmatch "No confirmatory or held-out execution has started|Confirmatory/Held-out execution .* NOT AUTHORIZED|confirmatory seeds .* remain prohibited") {
   throw "STATUS.md does not preserve the confirmatory/held-out stop gate."
 }
 if ($current -notmatch "TFL-UAS-DYNAMIC-001 v1.2 exploratory spatiotemporal relational Laplacian exactly as frozen|TFL-UAS-DYNAMIC-001 v1.1 exploratory operator revision exactly as frozen|TFL-UAS-DYNAMIC-001 exploratory v1.0 exactly as frozen|TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen|REVIEW_REQUIRED") {

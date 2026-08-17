@@ -1,5 +1,17 @@
 # Current Task
 
+## REVIEW_REQUIRED — DYNAMIC-001 v1.2 exploratory run
+
+Review `experiments/TFL-UAS-DYNAMIC-001/v1.2/REVIEW_REQUIRED.md` and the
+versioned diagnostics before any further work. Do not execute extensions,
+benchmarks, classifiers, confirmatory seeds, held-out seeds, or make a
+scientific decision without explicit review authorization.
+
+The authorized implementation/run is complete: 120 unchanged exploratory
+samples from seeds 101–120 were processed under the frozen v1.2 protocol.
+
+The prior implementation task follows for provenance:
+
 Implement **TFL-UAS-DYNAMIC-001 v1.2 exploratory spatiotemporal relational Laplacian exactly as frozen**, using unchanged exploratory data only, then stop at `REVIEW_REQUIRED`.
 
 The v1.2 protocol-freeze task is complete. Do not modify v1.0, v1.1, or v1.2

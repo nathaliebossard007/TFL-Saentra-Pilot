@@ -56,12 +56,19 @@
 ## TFL-UAS-DYNAMIC-001 v1.2
 
 - [x] Freeze spatiotemporal occupancy/Laplacian protocol/config and hashes.
-- [ ] Implement instantaneous and time-integrated relative occupancy graphs.
-- [ ] Implement normalized Laplacian, spectrum, and stable projector distances.
-- [ ] Implement parallel rigid, shape, motion, occupancy, and D6 recovery diagnostics.
-- [ ] Run v1.2 exploratory operator revision only; stop at review.
+- [x] Implement instantaneous and time-integrated relative occupancy graphs.
+- [x] Implement normalized Laplacian, spectrum, and stable projector distances.
+- [x] Implement parallel rigid, shape, motion, occupancy, and D6 recovery diagnostics.
+- [x] Run v1.2 exploratory operator revision only; stop at review.
 - [ ] Review D1/D2 invariance, D4 hard-control behavior, D5 expansion, and D6 recovery.
 - [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
+
+## 2026-08-17 — DYNAMIC-001 v1.2 exploratory run stopped at review
+
+- Applied the frozen v1.2 operator to unchanged v1.0 D1–D6 data for seeds 101–120.
+- Serialized 120 raw spatiotemporal states before evaluator-only metadata and produced 120 diagnostic records.
+- Integrity, schema, determinism, raw-output ordering, and frozen-protocol checks passed.
+- Created `experiments/TFL-UAS-DYNAMIC-001/v1.2/REVIEW_REQUIRED.md`; no scientific decision or extension is authorized.
 
 ## 2026-08-17 — DYNAMIC-001 v1.1 exploratory run stopped at review
 

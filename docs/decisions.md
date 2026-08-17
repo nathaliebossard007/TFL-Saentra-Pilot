@@ -149,3 +149,11 @@
 - Spectral eigenvalues alone are not sufficient: the exploratory operator must also record conservative eigenspace/projector distances to avoid raw-eigenvector sign ambiguity and to handle repeated/near-repeated eigenvalues explicitly.
 - D4 remains unchanged as the hard control; any separation must emerge from the frozen spatiotemporal operator rather than from altered simulation data.
 - Protocol freeze and exploratory execution remain separate tasks. Stop at REVIEW_REQUIRED after later execution.
+
+## 2026-08-17 — DYNAMIC-001 v1.2 exploratory run stopped at review
+
+- Implemented the frozen spatiotemporal occupancy/Laplacian operator against unchanged v1.0 algorithm-visible data for seeds 101–120.
+- Wrote 120 raw operator-state files before loading evaluator-only metadata and produced 120 diagnostics across D1–D6.
+- No simulator change, classifier, benchmark, confirmatory, or held-out execution occurred.
+- Repository guards, schema/leakage, determinism, and frozen-hash checks passed.
+- Automatic continuation stopped at `experiments/TFL-UAS-DYNAMIC-001/v1.2/REVIEW_REQUIRED.md`; no scientific decision was made.
