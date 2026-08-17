@@ -1,0 +1,20 @@
+{
+  "experiment": "TFL-UAS-DYNAMIC-001",
+  "protocol_version": "1.0",
+  "status": "frozen_protocol_only",
+  "seed_range": [101, 120],
+  "area_m": [10000, 10000],
+  "duration_s": 180,
+  "dt_s": 1,
+  "object_count": 4,
+  "scenario_ids": ["D1_common_translation", "D2_coordinated_rotation_maneuver", "D3_independent_motion", "D4_apparent_block_stable_geometry", "D5_organized_expansion_contraction", "D6_perturbation_recovery"],
+  "windows_s": [5, 15, 30],
+  "lags_s": [1, 5, 15, 30],
+  "baseline_interval_s": [30, 60],
+  "normalization": {"extent_floor_m": 1.0, "velocity_norm_floor_mps": 0.001, "correlation_variance_floor": 1e-09},
+  "stability": {"distance_derivative_abs_mps": 12.0, "relative_velocity_change_mps": 8.0, "direction_cosine_min": 0.85, "window_persistence_fraction": 0.8},
+  "recovery": {"disturbance_start_s": 70, "disturbance_end_s": 100, "reference_tolerance_fraction": 0.2, "minimum_reformation_s": 15},
+  "classifier": null,
+  "learned_parameters": false,
+  "confirmatory_authorization": false
+}

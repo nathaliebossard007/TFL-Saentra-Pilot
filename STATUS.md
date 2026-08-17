@@ -35,12 +35,12 @@ TFL-UAS-DYNAMIC-001:
 Status — NEW EXPLORATORY BRANCH AUTHORIZED
 Purpose — Relational Motion-State Persistence
 Primary perspective — spatial relations -> motion relations -> persistent relational dynamics -> organization
-Protocol v1.0 — NOT YET FROZEN
+Protocol v1.0 — FROZEN
 Implementation — NOT STARTED
 Primary missing layer — velocity correlation / relational motion evolution over registered temporal windows
 
 Current operational task:
-Create and freeze TFL-UAS-DYNAMIC-001 protocol v1.0 and configuration before implementation. Do not execute the experiment in the same protocol-freeze task.
+Implement TFL-UAS-DYNAMIC-001 exploratory v1.0 exactly as frozen. Do not execute benchmark, classification, or confirmatory extensions.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 

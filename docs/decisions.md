@@ -84,6 +84,14 @@
 - Descriptive diagnostics were recorded, but no GO/PARTIAL GO/NO-GO/INCONCLUSIVE decision was made.
 - Automatic continuation stopped at `experiments/TFL-UAS-SPATIAL-001/REVIEW_REQUIRED.md` before any extension.
 
+## 2026-08-17 — TFL-UAS-DYNAMIC-001 protocol v1.0 frozen
+
+- Frozen a separate relational motion-state persistence protocol after SPATIAL-001 exposed the limitation of adjacent-frame geometric persistence.
+- Protocol SHA-256: `88be6f7137c57836a825eb4f7a35935a0ad4867cb525801a967557ca3d5e59c9`.
+- Configuration SHA-256: `b5bd9075fc61edf39433d7c895e61a5b52aa31ac0d30c8c93706952aea7ecfef`.
+- Registered D1–D6 scenarios, motion pair relations, lags 1/5/15/30 s, windows 5/15/30 s, reference interval, relation lifetime, recovery, and spatial-vs-motion separation.
+- No DYNAMIC-001 implementation or execution occurred in the freeze task. The next task is implementation exactly as frozen.
+
 ## 2026-08-17 — Open TFL-UAS-DYNAMIC-001 exploratory branch
 
 - Scientific review of SPATIAL-001 v1.0 identified a measurement limitation rather than a direct falsification of relational organization: the current global persistence score is dominated by adjacent-frame spatial quietness and can rate block-stable apparent organization as persistent.

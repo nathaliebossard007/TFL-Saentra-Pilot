@@ -59,3 +59,14 @@
 - Leakage, schema, determinism, raw-output ordering, and frozen-protocol guards passed.
 - Evaluator metadata was loaded only after raw relational states were serialized.
 - Created `experiments/TFL-UAS-SPATIAL-001/REVIEW_REQUIRED.md`; no scientific decision or extension is authorized.
+
+## TFL-UAS-DYNAMIC-001
+
+- [x] Freeze protocol v1.0 and configuration with hashes.
+- [ ] Implement algorithm-visible/evaluator-only schema and leakage guards.
+- [ ] Implement D1–D6 synthetic dynamic scenarios.
+- [ ] Implement pair motion relations, registered lags/windows, lifetimes, reference distance, and recovery operators.
+- [ ] Write raw dynamic relational states before interpretation.
+- [ ] Run exploratory validation only; stop at review.
+- [ ] Review spatial-vs-motion persistence and D4/D5/D6 behavior.
+- [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
