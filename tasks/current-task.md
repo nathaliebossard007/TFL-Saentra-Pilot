@@ -1,117 +1,117 @@
 # Current Task
 
-Prepare and execute a scientifically reviewed **TFL-UAS-001B Protocol Revision v1.1 — Exploratory Redesign Only**.
+Start a new exploratory branch:
 
-The v1.0 exploratory run remains a preserved failed-validation record and MUST NOT be overwritten, reinterpreted, or used as confirmatory evidence.
+**TFL-UAS-SPATIAL-001 — Spatial Relational State Persistence**
 
-## Scientific purpose
+This is a perspective shift away from group-label classification. Preserve TFL-UAS-001B v1.0 and v1.1 unchanged as failed anti-trivial-separation classification-path records. Do not continue automatic 001B simulator tuning.
 
-Repair two methodological defects identified at the review gate:
+## Primary research question
 
-1. The simulator made the classes trivially separable in 7/8 simple marginal observables.
-2. Model A used a deterministic label-free logistic score rather than the intended supervised logistic-regression baseline.
+Can persistent relational spatial organization be detected independently of absolute position, orientation, scale, and predefined group labels?
 
-The redesign must preserve the original research question: distinguish **persistent relational organization** from **mere proximity / aligned motion**.
+## Core principle
 
-## Required v1.1 changes
+Model the observation space as:
 
-### A. Marginal-matched simulator
+`space -> relations -> organization -> state change`
 
-Create positive and negative exploratory scenarios whose simple marginal distributions substantially overlap for at least:
+Do not ask primarily whether a sample belongs to a coordinated-group class. Instead construct and test an unlabeled **Spatial Relational State** `S_t` from relations between established object tracks.
 
-- mean speed;
-- altitude;
-- centroid speed;
-- mean pairwise distance;
-- group extent;
-- mean heading;
-- trajectory duration;
-- spatial operating region.
+Algorithms may use track identity only as a stable within-sample reference. No group label or coordination label may be algorithm-visible.
 
-Where practical, generate positive/negative scenario pairs from a shared latent macroscopic trajectory envelope so that class identity is not encoded by global speed, altitude, location, scale, heading, or duration.
+## Required relational layers
 
-The intended distinguishing signal should primarily be **temporal dependence of relative relationships**, e.g. persistence/synchrony of pairwise geometry, velocity and acceleration relations.
+Define explicitly before execution:
 
-Do not make coordinated motion mathematically perfect. Do not make the hard negative random dispersal.
+1. Pair relational state `R_ij(t)` using interpretable quantities such as pairwise distance, normalized distance, relative velocity, distance derivative, and relative heading.
+2. Local relational neighborhood state `N_i(t)` summarizing persistent relations of each object.
+3. Global spatial relational state `S_t` based on the weighted relational graph and deterministic graph/operator summaries.
 
-### B. Proper supervised baseline boundary
+Maintain two parallel representations where useful:
 
-Implement Model A as a real supervised logistic-regression baseline while preserving evaluator isolation.
+- **Rigid Relational State**: translation/rotation invariant but not scale invariant.
+- **Shape State**: additionally normalized for scale.
 
-Use a separate exploratory training partition with labels available only to the training procedure. Test-sample ground truth remains evaluator-only until predictions are serialized.
+This distinction must prevent physically meaningful expansion/contraction from being erased by normalization.
 
-Training labels must never be exposed as test features or copied into algorithm-visible test samples.
+## Candidate graph/operator layer
 
-Document the exact train/test boundary and leakage guarantees.
+Construct a time-dependent weighted relational graph `G_t=(V,E_t,W_t)` without ground-truth labels. Include the normalized Laplacian where mathematically meaningful:
 
-### C. Protocol revision
+`L_norm(t) = I - D^(-1/2) W_t D^(-1/2)`
 
-Create a new protocol/config version (v1.1) rather than modifying frozen v1.0 in place.
+Candidate deterministic diagnostics may include pair-relation persistence, local-neighborhood persistence, graph-state distance, spectral gap, eigenvalue quantiles, eigenspace/projector distance, connectivity, clustering, and temporal operator change.
 
-Record new hashes and provenance. Preserve v1.0 hashes and all v1.0 exploratory outputs unchanged.
+No learned classifier is required for the first experiment.
 
-Explicitly document why v1.1 is required: failed anti-trivial-separation validation plus baseline-model interpretation defect.
+## Required exploratory scenarios
 
-## Exploratory execution only
+Implement at minimum:
 
-After v1.1 is frozen, run only a new exploratory dataset. Do NOT execute:
+S1 — Global Translation
+- Same relational organization translated through space.
+- Expected: relational state remains approximately invariant.
 
-- confirmatory seeds 201–220;
-- held-out seeds 301–320.
+S2 — Global Rotation / Formation Maneuver
+- Same relational organization translated and rotated over time.
+- Expected: rigid relational organization remains approximately invariant despite large coordinate changes.
 
-Do not reuse the failed v1.0 exploratory metrics as evidence.
+S3 — Independent Random Motion
+- Similar initial spatial arrangement, then independent motion.
+- Expected: relational persistence decays and state distance increases.
 
-If using seeds 101–120 again, ensure generated artifacts are versioned separately under v1.1 and cannot overwrite v1.0 outputs. A new exploratory seed namespace/range is also acceptable if explicitly frozen before execution.
+S4 — Apparent Spatial Organization
+- Similar local density, speed/heading distribution, and temporary proximity without persistent same-object relational organization.
+- Expected: density/proximity alone must not produce stable global relational state.
 
-## Required gates before interpreting model results
+S5 — Perturbation and Recovery
+- Stable organization, temporary disturbance, then restoration of the prior organization.
+- Expected: state distance rises during disturbance and falls after recovery; record recovery latency.
 
-1. protocol/config hash verification;
-2. 001A frozen-manifest validation;
-3. v1.0 preservation check;
-4. leakage/schema tests;
-5. simulator determinism;
-6. anti-trivial-separation audit;
-7. supervised train/test separation audit.
+## Primary measurements
 
-If the anti-trivial-separation gate still fails, stop again at REVIEW_REQUIRED and do not interpret A/B/C performance.
+Do not start with coordinated-group classification F1.
 
-## Model comparison
+Define and measure at minimum:
 
-Retain the scientific comparison:
+- pair relational persistence;
+- local relational persistence;
+- global relational-state persistence;
+- relational-state distance `D_S(t1,t2)`;
+- temporal state-change magnitude;
+- recovery latency after perturbation;
+- false persistence in the apparent-organization control;
+- sensitivity to translation, rotation, and scale changes.
 
-- A: conventional supervised fixed-window kinematic logistic regression;
-- B: temporal relational model without spectral features;
-- C: B plus frozen normalized-Laplacian spectral block.
+The first falsification question is:
 
-Retain the registered ablations unless v1.1 explicitly documents a scientifically necessary protocol change.
+**Does the proposed relational state show the expected invariances under organization-preserving transformations and degrade when the underlying same-object relational organization is destroyed?**
 
-## Decision discipline
+## Scientific discipline
 
-Do not issue GO / PARTIAL GO / NO-GO / INCONCLUSIVE from the exploratory redesign.
+- Synthetic only.
+- No real sensor data.
+- No group-label classifier in the primary test.
+- No neural model.
+- No post-hoc feature invention after viewing evaluator scenario identities.
+- Ground truth / scenario identity remains evaluator-only until state outputs are serialized.
+- Raw state trajectories and diagnostics must be written before interpretation.
+- Negative results are valid.
 
-Do not authorize confirmatory execution automatically.
+## 001B status
 
-After a valid exploratory v1.1 run, freeze all remaining unresolved parameters and stop at review before any confirmatory seed is touched.
+Do not modify or reinterpret TFL-UAS-001B v1.0/v1.1.
 
-## Required repository updates
+Confirmatory seeds 201–220 and held-out seeds 301–320 from 001B remain prohibited.
 
-Update:
+## Required workflow
 
-- STATUS.md
-- docs/decisions.md
-- tasks/backlog.md
-- protocol/config freeze records for v1.1
-- exploratory v1.1 report and diagnostics
+1. Create and freeze `TFL-UAS-SPATIAL-001` protocol v1.0 and config before implementation.
+2. Record protocol/config SHA-256 hashes.
+3. Add leakage and reproducibility gates.
+4. Implement only after the protocol freeze.
+5. Run exploratory scenarios only.
+6. Stop at `REVIEW_REQUIRED` before any later benchmark/classification/confirmatory extension.
 
-Preserve REVIEW_REQUIRED.md as the historical v1.0 review record unless a clearly versioned review archive is preferable.
-
-At completion, set the next task to:
-
-**Review TFL-UAS-001B v1.1 exploratory validation and parameter freeze before confirmatory authorization.**
-
-## Current gate
-
-REVIEW_REQUIRED: v1.1 anti-triviality validation failed. Mean pairwise distance
-and group extent each reached one-variable balanced accuracy 1.0. Do not
-interpret A/B/C metrics, tune automatically, or execute further seeds. See
-`experiments/TFL-UAS-001B/v1.1/REVIEW_REQUIRED_v1.1.json`.
+At completion of the protocol-freeze task, set the next task to implement **TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen**. Do not execute the exploratory run in the same protocol-freeze task.
