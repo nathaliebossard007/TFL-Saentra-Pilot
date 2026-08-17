@@ -129,3 +129,15 @@
 - No classifier, neural model, learned edge weight, or benchmark is authorized in DYNAMIC-001 v1.0.
 - DYNAMIC-001 protocol/config must be frozen before implementation; protocol freeze and execution are separate tasks.
 - 001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
+
+## 2026-08-17 — Authorize DYNAMIC-001 v1.2 spatiotemporal relational Laplacian
+
+- Review of v1.1 accepts that D4 should not be simulator-tuned merely to force a lower motion-persistence score.
+- The next revision is operator-level: couple relational motion to the time-integrated **relative spatial occupancy** produced by the established tracks.
+- v1.2 primary question: can a time-integrated normalized Laplacian of relative spatial occupancy preserve organized states while distinguishing block-stable apparent organization across longer windows?
+- Reuse the unchanged D1–D6 exploratory track data. No new scenarios, no simulator tuning, no classifier, and no learned edge weights are authorized.
+- Preserve parallel rigid, shape, motion, and occupancy operator layers so common translation, common rotation, and organized expansion/contraction are not conflated.
+- The v1.2 protocol must freeze the occupancy definition, graph weights, normalized-Laplacian construction, zero-degree behavior, spectral distances, and eigenspace/projector distances before implementation.
+- Spectral eigenvalues alone are not sufficient: the exploratory operator must also record conservative eigenspace/projector distances to avoid raw-eigenvector sign ambiguity and to handle repeated/near-repeated eigenvalues explicitly.
+- D4 remains unchanged as the hard control; any separation must emerge from the frozen spatiotemporal operator rather than from altered simulation data.
+- Protocol freeze and exploratory execution remain separate tasks. Stop at REVIEW_REQUIRED after later execution.
