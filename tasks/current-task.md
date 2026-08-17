@@ -1,5 +1,19 @@
 # Current Task
 
+Implement **TFL-UAS-DYNAMIC-001 v1.2 exploratory spatiotemporal relational Laplacian exactly as frozen**, using unchanged exploratory data only, then stop at `REVIEW_REQUIRED`.
+
+The v1.2 protocol-freeze task is complete. Do not modify v1.0, v1.1, or v1.2
+frozen protocol/config files, do not tune D1–D6, and do not execute
+confirmatory or held-out seeds.
+
+Frozen v1.2 files:
+
+- `experiments/TFL-UAS-DYNAMIC-001/v1.2/TFL-UAS-DYNAMIC-001_PROTOCOL_v1.2.md`
+- `experiments/TFL-UAS-DYNAMIC-001/v1.2/config/tfl_uas_dynamic_001_protocol_v1.2.json`
+- `experiments/TFL-UAS-DYNAMIC-001/v1.2/PROTOCOL_FREEZE.md`
+
+The prior protocol-freeze task description follows for provenance:
+
 Prepare and freeze **TFL-UAS-DYNAMIC-001 v1.2 — Spatiotemporal Relational Laplacian** before implementation.
 
 Preserve DYNAMIC-001 v1.0 and v1.1 unchanged as frozen exploratory records. Do not modify their protocols, configs, implementations, raw states, diagnostics, or review files.

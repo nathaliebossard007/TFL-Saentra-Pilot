@@ -37,7 +37,11 @@ $required = @(
   "experiments/TFL-UAS-DYNAMIC-001/v1.1/TFL-UAS-DYNAMIC-001_PROTOCOL_v1.1.md",
   "experiments/TFL-UAS-DYNAMIC-001/v1.1/config/tfl_uas_dynamic_001_protocol_v1.1.json",
   "experiments/TFL-UAS-DYNAMIC-001/v1.1/PROTOCOL_FREEZE.md",
-  "experiments/TFL-UAS-DYNAMIC-001/v1.1/REVIEW_REQUIRED.md"
+  "experiments/TFL-UAS-DYNAMIC-001/v1.1/REVIEW_REQUIRED.md",
+  "experiments/TFL-UAS-DYNAMIC-001/v1.2/README.md",
+  "experiments/TFL-UAS-DYNAMIC-001/v1.2/TFL-UAS-DYNAMIC-001_PROTOCOL_v1.2.md",
+  "experiments/TFL-UAS-DYNAMIC-001/v1.2/config/tfl_uas_dynamic_001_protocol_v1.2.json",
+  "experiments/TFL-UAS-DYNAMIC-001/v1.2/PROTOCOL_FREEZE.md"
 )
 
 foreach ($path in $required) {
@@ -51,7 +55,7 @@ $current = Get-Content -Raw "tasks/current-task.md"
 if ($status -notmatch "No confirmatory or held-out execution has started|Confirmatory/Held-out execution — NOT AUTHORIZED|confirmatory seeds .* remain prohibited") {
   throw "STATUS.md does not preserve the confirmatory/held-out stop gate."
 }
-if ($current -notmatch "TFL-UAS-DYNAMIC-001 v1.1 exploratory operator revision exactly as frozen|TFL-UAS-DYNAMIC-001 exploratory v1.0 exactly as frozen|TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen|REVIEW_REQUIRED") {
+if ($current -notmatch "TFL-UAS-DYNAMIC-001 v1.2 exploratory spatiotemporal relational Laplacian exactly as frozen|TFL-UAS-DYNAMIC-001 v1.1 exploratory operator revision exactly as frozen|TFL-UAS-DYNAMIC-001 exploratory v1.0 exactly as frozen|TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen|REVIEW_REQUIRED") {
   throw "Current task is not recognized as an authorized gated task."
 }
 
@@ -130,3 +134,13 @@ if ([string]::IsNullOrWhiteSpace($dynamicV11ProtocolExpected) -or [string]::IsNu
 if ((Get-FileHash $dynamicV11Protocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV11ProtocolExpected) { throw "DYNAMIC-001 v1.1 protocol hash mismatch." }
 if ((Get-FileHash $dynamicV11Config -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV11ConfigExpected) { throw "DYNAMIC-001 v1.1 configuration hash mismatch." }
 Write-Output "DYNAMIC-001 v1.1 protocol freeze hash check passed."
+
+$dynamicV12Protocol = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-DYNAMIC-001\v1.2\TFL-UAS-DYNAMIC-001_PROTOCOL_v1.2.md"
+$dynamicV12Config = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-DYNAMIC-001\v1.2\config\tfl_uas_dynamic_001_protocol_v1.2.json"
+$dynamicV12Freeze = Get-Content -Raw (Join-Path $PSScriptRoot "..\experiments\TFL-UAS-DYNAMIC-001\v1.2\PROTOCOL_FREEZE.md")
+$dynamicV12ProtocolExpected = ([regex]::Match($dynamicV12Freeze, 'Protocol SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+$dynamicV12ConfigExpected = ([regex]::Match($dynamicV12Freeze, 'Config SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+if ([string]::IsNullOrWhiteSpace($dynamicV12ProtocolExpected) -or [string]::IsNullOrWhiteSpace($dynamicV12ConfigExpected)) { throw "DYNAMIC-001 v1.2 freeze hashes are missing or malformed." }
+if ((Get-FileHash $dynamicV12Protocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV12ProtocolExpected) { throw "DYNAMIC-001 v1.2 protocol hash mismatch." }
+if ((Get-FileHash $dynamicV12Config -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV12ConfigExpected) { throw "DYNAMIC-001 v1.2 configuration hash mismatch." }
+Write-Output "DYNAMIC-001 v1.2 protocol freeze hash check passed."

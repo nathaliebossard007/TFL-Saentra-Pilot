@@ -47,12 +47,12 @@ TFL-UAS-DYNAMIC-001 v1.2:
 Status — SPATIOTEMPORAL RELATIONAL LAPLACIAN REVISION AUTHORIZED
 Purpose — couple relational motion to time-integrated relative spatial occupancy
 Scope — operator revision only; reuse unchanged D1–D6 exploratory data; no simulator tuning
-Protocol/config — NOT YET FROZEN
-Implementation/execution — NOT AUTHORIZED UNTIL v1.2 FREEZE
+Protocol/config — FROZEN
+Implementation/execution — EXPLORATORY ONLY, NOT YET STARTED
 Primary operator — time-integrated relative-occupancy graph and normalized Laplacian with spectrum/projector diagnostics
 
 Current operational task:
-Create and freeze TFL-UAS-DYNAMIC-001 v1.2 protocol/config before implementation. Do not execute v1.2 in the same task.
+Implement TFL-UAS-DYNAMIC-001 v1.2 exploratory spatiotemporal relational Laplacian exactly as frozen, then stop at REVIEW_REQUIRED.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.

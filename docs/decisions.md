@@ -85,6 +85,14 @@
 - Registered genuine per-pair motion correlation, per-pair lifetimes, revised lagged persistence, reference/window distances, and D6 recovery/reformation rules.
 - No v1.1 implementation or execution occurred in the freeze task. The next task is implementation exactly as frozen.
 
+## 2026-08-17 — DYNAMIC-001 v1.2 spatiotemporal Laplacian protocol frozen
+
+- Frozen an operator-only v1.2 revision after v1.1 review found D4 locally persistent under pairwise motion correlation.
+- Protocol SHA-256: `d991f90d0888a3501dfc42aef41caaed2d3e92fbb3bc5a04b83770ec3b63e072`.
+- Configuration SHA-256: `9d56853054c43a79b36daf6e36790a47c89986f672a98ac517aa05049d22b806`.
+- Registered time-integrated relative spatial occupancy, normalized Laplacian construction, zero-degree behavior, spectrum/projector distances, baseline/window distances, and D6 operator-space recovery.
+- v1.0/v1.1 data and artifacts remain unchanged; no v1.2 implementation or execution occurred in the freeze task.
+
 ## 2026-08-17 — DYNAMIC-001 v1.1 exploratory run stopped at review
 
 - Applied the frozen operator-only v1.1 revision to unchanged v1.0 D1–D6 track data for seeds 101–120 and generated 120 revised raw state files.

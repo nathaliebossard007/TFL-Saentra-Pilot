@@ -53,6 +53,16 @@
 - [ ] Review D4/D5/D6 and operator behavior before any extension.
 - [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
 
+## TFL-UAS-DYNAMIC-001 v1.2
+
+- [x] Freeze spatiotemporal occupancy/Laplacian protocol/config and hashes.
+- [ ] Implement instantaneous and time-integrated relative occupancy graphs.
+- [ ] Implement normalized Laplacian, spectrum, and stable projector distances.
+- [ ] Implement parallel rigid, shape, motion, occupancy, and D6 recovery diagnostics.
+- [ ] Run v1.2 exploratory operator revision only; stop at review.
+- [ ] Review D1/D2 invariance, D4 hard-control behavior, D5 expansion, and D6 recovery.
+- [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
+
 ## 2026-08-17 — DYNAMIC-001 v1.1 exploratory run stopped at review
 
 - Applied the frozen operator-only revision to unchanged v1.0 D1–D6 exploratory track data: 120 samples, seeds 101–120.

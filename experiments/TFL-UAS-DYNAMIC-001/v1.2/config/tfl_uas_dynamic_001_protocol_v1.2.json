@@ -1,0 +1,18 @@
+{
+  "experiment": "TFL-UAS-DYNAMIC-001",
+  "protocol_version": "1.2",
+  "status": "frozen_protocol_only",
+  "lineage": {"source_track_data": "DYNAMIC-001 v1.0 unchanged exploratory data", "predecessor_operator": "DYNAMIC-001 v1.1", "simulator_changed": false},
+  "seed_range": [101, 120],
+  "scenario_ids": ["D1_common_translation", "D2_coordinated_rotation_maneuver", "D3_independent_motion", "D4_apparent_block_stable_geometry", "D5_organized_expansion_contraction", "D6_perturbation_recovery"],
+  "windows_s": [5, 15, 30],
+  "baseline_interval_s": [30, 60],
+  "instantaneous_weight": {"distance_derivative_scale_mps": 12.0, "relative_velocity_scale_mps": 8.0, "formula": "exp(-mean([d_norm, abs(d_dot)/12, rel_speed/8, (1+heading_cos)/2]^2)/2)"},
+  "occupancy": {"relative_distance_floor_m": 1.0, "shape_scale_normalization": "window_median_pair_distance", "persistence_formula": "mean(exp(-((d_norm_k-d_norm_t)^2+(d_dot_k-d_dot_t)^2)/2))*mean((1+heading_cos_k)/2)"},
+  "laplacian": {"zero_degree_floor": 1e-12, "zero_degree_behavior": "zero_inverse_factor_identity_diagonal"},
+  "spectral": {"projector_rank": 2, "eigenspace_gap_min": 1e-06, "projector_distance": "frobenius(P-Pprime)/sqrt(2r)", "eigenvalue_order": "ascending"},
+  "recovery": {"disturbance_end_s": 100, "reference_tolerance_fraction": 0.2, "minimum_recovery_duration_s": 15, "minimum_reformed_pairs": 5, "reformation_duration_s": 15, "unmet_value_s": 180},
+  "classifier": null,
+  "learned_parameters": false,
+  "confirmatory_authorization": false
+}
