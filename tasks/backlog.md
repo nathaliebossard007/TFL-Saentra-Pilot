@@ -32,6 +32,17 @@
 - Member departure.
 - degraded observation organization tests.
 
+## TFL-UAS-SPATIAL-001
+
+- [x] Freeze protocol v1.0 and configuration with hashes.
+- [ ] Implement algorithm-visible/evaluator-only schema and leakage guards.
+- [ ] Implement S1–S5 synthetic exploratory scenarios.
+- [ ] Implement rigid relational state, shape state, local state, and global graph state.
+- [ ] Write raw state trajectories and diagnostics before interpretation.
+- [ ] Run exploratory validation only; stop at review.
+- [ ] Review invariance, persistence, disturbance/recovery, and apparent-control results.
+- [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
+
 ## 2026-08-17 — v1.1 exploratory validation stopped
 
 - v1.1 protocol/config and versioned artifacts were created without modifying v1.0.

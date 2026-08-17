@@ -1,0 +1,21 @@
+{
+  "experiment": "TFL-UAS-SPATIAL-001",
+  "protocol_version": "1.0",
+  "status": "frozen_protocol_only",
+  "seed_range": [101, 120],
+  "forbidden_001b_confirmatory_seeds": [201, 220],
+  "forbidden_001b_held_out_seeds": [301, 320],
+  "area_m": [10000, 10000],
+  "duration_s": 180,
+  "dt_s": 1,
+  "object_count": 4,
+  "scenario_ids": ["S1_global_translation", "S2_global_rotation", "S3_independent_random_motion", "S4_apparent_spatial_organization", "S5_perturbation_recovery"],
+  "pair_relation_fields": ["distance_m", "normalized_distance", "distance_derivative_mps", "relative_velocity_xyz", "relative_heading_cosine"],
+  "graph": {"weight_formula": "exp(-normalized_relation_squared / 2)", "minimum_edge_weight": 0.2, "zero_degree_laplacian": "identity_contribution"},
+  "states": ["rigid_relational_state", "shape_state", "local_neighborhood_state", "global_spatial_relational_state"],
+  "registered_windows_s": [5, 15, 30],
+  "recovery": {"disturbance_start_s": 70, "disturbance_end_s": 100, "recovery_tolerance": 0.2, "baseline_window_s": 30},
+  "primary_measurements": ["pair_relational_persistence", "local_relational_persistence", "global_relational_state_persistence", "relational_state_distance", "temporal_state_change", "recovery_latency", "apparent_control_false_persistence", "translation_rotation_scale_sensitivity"],
+  "classifier": null,
+  "confirmatory_authorization": false
+}

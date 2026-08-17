@@ -67,3 +67,11 @@
 - No classifier is required in the primary SPATIAL-001 test. Graph/Laplacian quantities remain candidate deterministic diagnostics and must earn any role empirically.
 - SPATIAL-001 protocol v1.0 must be frozen before implementation. Exploratory execution must stop at review before any benchmark/classification/confirmatory extension.
 - 001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
+
+## 2026-08-17 — TFL-UAS-SPATIAL-001 protocol v1.0 frozen
+
+- Frozen a separate spatial relational-state persistence protocol before implementation.
+- Protocol SHA-256: `b3cbf5e30981c13b670010563dee6004f7262f3d6190da6a73f492d9cff219fe`.
+- Configuration SHA-256: `88f47cce9a2b4089813320092e437956a2ea3d2c45f08c8e260b3262b08b9ac6`.
+- Registered S1–S5 scenarios, rigid and shape states, local/global relational layers, graph/Laplacian diagnostics, persistence measures, and recovery measurements.
+- No implementation or exploratory execution occurred in the freeze task. The next task is implementation exactly as frozen.

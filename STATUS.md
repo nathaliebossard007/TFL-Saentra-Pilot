@@ -27,10 +27,10 @@ TFL-UAS-SPATIAL-001:
 Status — NEW EXPLORATORY BRANCH AUTHORIZED
 Purpose — Spatial Relational State Persistence
 Primary perspective — space -> relations -> organization -> state change
-Protocol v1.0 — NOT YET FROZEN
+Protocol v1.0 — FROZEN
 Implementation — NOT STARTED
 
 Current operational task:
-Create and freeze TFL-UAS-SPATIAL-001 protocol v1.0 and configuration before implementation. Do not execute the exploratory experiment in the same protocol-freeze task.
+Implement TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen. Do not execute benchmark, classification, or confirmatory extensions.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.

@@ -22,7 +22,11 @@ $required = @(
   "experiments/TFL-UAS-001B/PROTOCOL_FREEZE.md",
   "experiments/TFL-UAS-001B/v1.1/TFL-UAS-001B_PROTOCOL_v1.1.md",
   "experiments/TFL-UAS-001B/v1.1/config/tfl_uas_001b_protocol_v1.1.json",
-  "experiments/TFL-UAS-001B/v1.1/PROTOCOL_FREEZE.md"
+  "experiments/TFL-UAS-001B/v1.1/PROTOCOL_FREEZE.md",
+  "experiments/TFL-UAS-SPATIAL-001/README.md",
+  "experiments/TFL-UAS-SPATIAL-001/TFL-UAS-SPATIAL-001_PROTOCOL_v1.0.md",
+  "experiments/TFL-UAS-SPATIAL-001/config/tfl_uas_spatial_001_protocol_v1.json",
+  "experiments/TFL-UAS-SPATIAL-001/PROTOCOL_FREEZE.md"
 )
 
 foreach ($path in $required) {
@@ -36,8 +40,8 @@ $current = Get-Content -Raw "tasks/current-task.md"
 if ($status -notmatch "No confirmatory or held-out execution has started|Confirmatory/Held-out execution — NOT AUTHORIZED|confirmatory seeds .* remain prohibited") {
   throw "STATUS.md does not preserve the confirmatory/held-out stop gate."
 }
-if ($current -notmatch "REVIEW_REQUIRED") {
-  throw "Current task is not marked REVIEW_REQUIRED."
+if ($current -notmatch "TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen|REVIEW_REQUIRED") {
+  throw "Current task is not recognized as an authorized gated task."
 }
 
 $frozenRoot = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001A"
@@ -85,3 +89,13 @@ if ([string]::IsNullOrWhiteSpace($v11ProtocolExpected) -or [string]::IsNullOrWhi
 if ((Get-FileHash $v11Protocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $v11ProtocolExpected) { throw "v1.1 protocol hash mismatch." }
 if ((Get-FileHash $v11Config -Algorithm SHA256).Hash.ToLowerInvariant() -ne $v11ConfigExpected) { throw "v1.1 configuration hash mismatch." }
 Write-Output "001B v1.1 protocol freeze hash check passed."
+
+$spatialProtocol = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-SPATIAL-001\TFL-UAS-SPATIAL-001_PROTOCOL_v1.0.md"
+$spatialConfig = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-SPATIAL-001\config\tfl_uas_spatial_001_protocol_v1.json"
+$spatialFreeze = Get-Content -Raw (Join-Path $PSScriptRoot "..\experiments\TFL-UAS-SPATIAL-001\PROTOCOL_FREEZE.md")
+$spatialProtocolExpected = ([regex]::Match($spatialFreeze, 'Protocol SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+$spatialConfigExpected = ([regex]::Match($spatialFreeze, 'Config SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+if ([string]::IsNullOrWhiteSpace($spatialProtocolExpected) -or [string]::IsNullOrWhiteSpace($spatialConfigExpected)) { throw "SPATIAL-001 freeze hashes are missing or malformed." }
+if ((Get-FileHash $spatialProtocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $spatialProtocolExpected) { throw "SPATIAL-001 protocol hash mismatch." }
+if ((Get-FileHash $spatialConfig -Algorithm SHA256).Hash.ToLowerInvariant() -ne $spatialConfigExpected) { throw "SPATIAL-001 configuration hash mismatch." }
+Write-Output "SPATIAL-001 protocol freeze hash check passed."

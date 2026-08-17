@@ -1,5 +1,21 @@
 # Current Task
 
+Implement **TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen**.
+
+The protocol-freeze task is complete. Do not modify the frozen protocol or
+configuration, do not execute 001B confirmatory/held-out seeds, and do not
+add classification or benchmark extensions. Write raw relational-state
+outputs before interpretation and stop at `REVIEW_REQUIRED` after the
+exploratory run.
+
+Frozen files:
+
+- `experiments/TFL-UAS-SPATIAL-001/TFL-UAS-SPATIAL-001_PROTOCOL_v1.0.md`
+- `experiments/TFL-UAS-SPATIAL-001/config/tfl_uas_spatial_001_protocol_v1.json`
+- `experiments/TFL-UAS-SPATIAL-001/PROTOCOL_FREEZE.md`
+
+The prior protocol-freeze branch description follows for provenance:
+
 Start a new exploratory branch:
 
 **TFL-UAS-SPATIAL-001 — Spatial Relational State Persistence**
