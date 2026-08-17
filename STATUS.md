@@ -26,29 +26,33 @@ Further automatic simulator tuning — NOT AUTHORIZED
 TFL-UAS-SPATIAL-001:
 Status — EXPLORATORY RUN COMPLETED; REVIEWED AS MEASUREMENT-LIMITED
 Purpose — Spatial Relational State Persistence
-Primary perspective — space -> relations -> organization -> state change
 Protocol v1.0 — FROZEN
-Implementation — COMPLETED FOR EXPLORATORY RUN ONLY
-Interpretation — promising transformation-invariance diagnostics, but persistent-organization detection not validated because adjacent-frame persistence can overrate block-stable apparent organization
+Interpretation — promising transformation-invariance diagnostics, but adjacent-frame persistence can overrate block-stable apparent organization
 
 TFL-UAS-DYNAMIC-001 v1.0:
 Status — EXPLORATORY RUN COMPLETED; REVIEWED AS OPERATOR-LIMITED
-Purpose — Relational Motion-State Persistence
 Protocol v1.0 — FROZEN
-Implementation — COMPLETED FOR EXPLORATORY RUN ONLY
-Review finding — promising spatial-vs-motion separation, but lagged persistence is threshold-count based and relation lifetime is not a true per-pair lifetime measure
-Scientific interpretation — NOT YET AUTHORIZED
+Review finding — promising spatial-vs-motion separation, but lagged persistence/lifetime definitions were inadequate
+Scientific interpretation — NOT AUTHORIZED
 
 TFL-UAS-DYNAMIC-001 v1.1:
-Status — OPERATOR REVISION AUTHORIZED
+Status — EXPLORATORY RUN COMPLETED; REVIEWED
 Purpose — Motion Correlation Operator Revision
-Scope — measurement/operator revision only; D1–D6 conceptually unchanged; no simulator tuning to improve separation
 Protocol/config — FROZEN
-Implementation/execution — COMPLETED FOR EXPLORATORY RUN ONLY
-Validation — REVIEW_REQUIRED
+Simulator — UNCHANGED FROM v1.0
+Review finding — genuine pair operators improved D3/D6 sensitivity and preserved D5 dynamic coherence; D4 remained highly persistent and may contain locally stable relational dynamics not captured by pairwise time correlation alone
+Scientific interpretation — NO GO/NO-GO DECISION; operator hierarchy remains under study
+
+TFL-UAS-DYNAMIC-001 v1.2:
+Status — SPATIOTEMPORAL RELATIONAL LAPLACIAN REVISION AUTHORIZED
+Purpose — couple relational motion to time-integrated relative spatial occupancy
+Scope — operator revision only; reuse unchanged D1–D6 exploratory data; no simulator tuning
+Protocol/config — NOT YET FROZEN
+Implementation/execution — NOT AUTHORIZED UNTIL v1.2 FREEZE
+Primary operator — time-integrated relative-occupancy graph and normalized Laplacian with spectrum/projector diagnostics
 
 Current operational task:
-REVIEW_REQUIRED — review DYNAMIC-001 v1.1 per-pair operators, D4 behavior, and D6 recovery diagnostics before any extension.
+Create and freeze TFL-UAS-DYNAMIC-001 v1.2 protocol/config before implementation. Do not execute v1.2 in the same task.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
-No classifier, benchmark, or confirmatory extension is authorized.
+No classifier, benchmark, confirmatory, or held-out extension is authorized.
