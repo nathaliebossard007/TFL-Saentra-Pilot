@@ -2,11 +2,11 @@
 
 ## P0
 
-- Import frozen TFL-UAS-001A predecessor.
-- Verify archive structure.
-- Verify available hashes.
-- Record frozen experiment lineage.
-- Mark predecessor immutable.
+- [x] Import frozen TFL-UAS-001A predecessor.
+- [x] Verify archive structure.
+- [x] Verify available hashes.
+- [x] Record frozen experiment lineage.
+- [x] Mark predecessor immutable.
 
 ## P1
 

@@ -14,7 +14,9 @@ $required = @(
   "experiments/TFL-UAS-001B/README.md",
   "tasks/backlog.md",
   "tasks/current-task.md",
-  "scripts/run-pilot-check.ps1"
+  "scripts/run-pilot-check.ps1",
+  "experiments/TFL-UAS-001A/FROZEN_PROVENANCE.md",
+  "experiments/TFL-UAS-001A/FROZEN_MANIFEST.sha256"
 )
 
 foreach ($path in $required) {
@@ -28,8 +30,27 @@ $current = Get-Content -Raw "tasks/current-task.md"
 if ($status -notmatch "No 001B implementation has started") {
   throw "STATUS.md does not preserve the no-implementation gate."
 }
-if ($current -notmatch "Import and verify the frozen predecessor") {
-  throw "Current task is not the predecessor import gate."
+if ($current -notmatch "Specify and freeze TFL-UAS-001B") {
+  throw "Current task is not the post-import protocol gate."
+}
+
+$frozenRoot = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001A"
+$manifestPath = Join-Path $frozenRoot "FROZEN_MANIFEST.sha256"
+foreach ($line in Get-Content -LiteralPath $manifestPath) {
+  if ([string]::IsNullOrWhiteSpace($line)) { continue }
+  $parts = $line -split "  ", 2
+  if ($parts.Count -ne 2) { throw "Malformed frozen manifest line: $line" }
+  $expected = $parts[0].ToLowerInvariant()
+  $relative = $parts[1].Replace('/', [IO.Path]::DirectorySeparatorChar)
+  $target = Join-Path $frozenRoot $relative
+  if (-not (Test-Path -LiteralPath $target -PathType Leaf)) {
+    throw "Frozen predecessor file missing: $relative"
+  }
+  $actual = (Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash.ToLowerInvariant()
+  if ($actual -ne $expected) {
+    throw "Frozen predecessor hash mismatch: $relative`nExpected: $expected`nActual:   $actual"
+  }
 }
 
 Write-Output "Pilot structure check passed."
+Write-Output "Frozen predecessor manifest check passed."

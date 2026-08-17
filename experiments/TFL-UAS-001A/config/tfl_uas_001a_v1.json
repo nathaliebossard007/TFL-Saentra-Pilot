@@ -1,0 +1,26 @@
+{
+  "experiment_id": "TFL-UAS-001A",
+  "code_version": "0.1.0",
+  "area_m": [10000, 10000],
+  "duration_s": 120,
+  "dt_s": 1.0,
+  "sensor_count": 20,
+  "sensor_altitude_m": 20,
+  "sensor_range_m": 6500,
+  "bearing_sigma_deg": 0.35,
+  "elevation_sigma_deg": 0.25,
+  "range_sigma_m": 35.0,
+  "miss_probability": 0.12,
+  "false_detection_rate_per_sensor_frame": 0.002,
+  "occlusion": {"object": 1, "start_s": 54, "end_s": 62},
+  "baseline": {"gate_mahalanobis2": 16.0, "process_accel_sigma": 2.5},
+  "ric": {
+    "max_dt_s": 3.0,
+    "sigma_speed_residual_mps": 18.0,
+    "sigma_heading_deg": 35.0,
+    "sigma_spatial_m": 90.0,
+    "max_speed_mps": 95.0,
+    "min_edge_weight": 0.03
+  },
+  "seeds": [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120]
+}

@@ -1,15 +1,9 @@
 # Current Task
 
-Import and verify the frozen predecessor:
+The TFL-UAS-001A predecessor import is complete and frozen.
 
-TFL-UAS-001A_frozen_v0.1.0.zip
+Next task:
 
-The archive will be provided separately.
+Specify and freeze TFL-UAS-001B experimental protocol before implementation.
 
-Do not implement TFL-UAS-001B until the predecessor archive has been:
-
-1. imported,
-2. inspected,
-3. hash-verified where possible,
-4. documented,
-5. and marked immutable.
+Do not implement TFL-UAS-001B until its protocol, data lineage, leakage controls, exploratory/confirmatory split, and decision rules have been documented and frozen.

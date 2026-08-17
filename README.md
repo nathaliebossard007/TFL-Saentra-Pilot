@@ -2,4 +2,4 @@
 
 Authoritative project memory and implementation workspace for the SÆNTRA / TFL-UAS research line.
 
-This repository currently contains project setup and research-memory files only. TFL-UAS-001B has not been implemented.
+The frozen TFL-UAS-001A predecessor has been imported and verified under `experiments/TFL-UAS-001A/`. TFL-UAS-001B has not been implemented.
