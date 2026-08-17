@@ -13,3 +13,11 @@
 - The raw configuration hash is VERIFIED as `08773ac135820dbffb2948163dd25d36bd0a581a60d0ab838efe0597f98b4797`.
 - The imported predecessor is frozen and protected by a SHA-256 manifest and pilot check.
 - Track Association remains NO-GO. No TFL-UAS-001B implementation has started.
+
+## 2026-08-17 — TFL-UAS-001B protocol frozen before implementation
+
+- Frozen the v1.0 protocol and companion configuration for relational organization discrimination.
+- Locked four-object established-track input, apparent-group and coordinated-group classes, exploratory/confirmatory/held-out seed ranges, three primary models, required ablations, leakage gates, metrics, and separate GO statuses.
+- Recorded protocol SHA-256 `73fb85b80f8fde41b285f8208e894b0846d2832e60fd0bd1413fddc1e2041f73`.
+- Recorded configuration SHA-256 `6dc01ba9c0d06dfb6bf26d5a00bf276193d084afd679f84ffeb1283e5d8af14a`.
+- No TFL-UAS-001B implementation or result was created.

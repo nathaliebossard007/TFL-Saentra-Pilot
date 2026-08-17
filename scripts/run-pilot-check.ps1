@@ -16,7 +16,10 @@ $required = @(
   "tasks/current-task.md",
   "scripts/run-pilot-check.ps1",
   "experiments/TFL-UAS-001A/FROZEN_PROVENANCE.md",
-  "experiments/TFL-UAS-001A/FROZEN_MANIFEST.sha256"
+  "experiments/TFL-UAS-001A/FROZEN_MANIFEST.sha256",
+  "experiments/TFL-UAS-001B/TFL-UAS-001B_PROTOCOL_v1.0.md",
+  "experiments/TFL-UAS-001B/config/tfl_uas_001b_protocol_v1.json",
+  "experiments/TFL-UAS-001B/PROTOCOL_FREEZE.md"
 )
 
 foreach ($path in $required) {
@@ -30,8 +33,8 @@ $current = Get-Content -Raw "tasks/current-task.md"
 if ($status -notmatch "No 001B implementation has started") {
   throw "STATUS.md does not preserve the no-implementation gate."
 }
-if ($current -notmatch "Specify and freeze TFL-UAS-001B") {
-  throw "Current task is not the post-import protocol gate."
+if ($current -notmatch "Implement TFL-UAS-001B exactly according to the frozen v1.0 protocol") {
+  throw "Current task is not the frozen-protocol implementation gate."
 }
 
 $frozenRoot = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001A"
@@ -54,3 +57,18 @@ foreach ($line in Get-Content -LiteralPath $manifestPath) {
 
 Write-Output "Pilot structure check passed."
 Write-Output "Frozen predecessor manifest check passed."
+
+$protocolPath = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001B\TFL-UAS-001B_PROTOCOL_v1.0.md"
+$configPath = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001B\config\tfl_uas_001b_protocol_v1.json"
+$freezePath = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001B\PROTOCOL_FREEZE.md"
+$freeze = Get-Content -Raw -LiteralPath $freezePath
+$protocolExpected = ([regex]::Match($freeze, 'Protocol SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+$configExpected = ([regex]::Match($freeze, 'Configuration SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+if ([string]::IsNullOrWhiteSpace($protocolExpected) -or [string]::IsNullOrWhiteSpace($configExpected)) {
+  throw "Protocol freeze hashes are missing or malformed."
+}
+$protocolActual = (Get-FileHash -LiteralPath $protocolPath -Algorithm SHA256).Hash.ToLowerInvariant()
+$configActual = (Get-FileHash -LiteralPath $configPath -Algorithm SHA256).Hash.ToLowerInvariant()
+if ($protocolActual -ne $protocolExpected) { throw "001B protocol hash mismatch." }
+if ($configActual -ne $configExpected) { throw "001B configuration hash mismatch." }
+Write-Output "001B protocol freeze hash check passed."

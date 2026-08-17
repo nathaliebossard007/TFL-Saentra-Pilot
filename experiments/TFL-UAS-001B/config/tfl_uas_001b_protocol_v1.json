@@ -1,0 +1,96 @@
+{
+  "experiment_id": "TFL-UAS-001B",
+  "protocol_version": "1.0",
+  "status": "FROZEN_BEFORE_IMPLEMENTATION",
+  "scientific_objective": "Relational organization discrimination from established four-object tracks",
+  "synthetic_only": true,
+  "simulation": {
+    "area_m": [10000, 10000],
+    "object_count": 4,
+    "duration_s": 180,
+    "dt_s": 1.0,
+    "input_layer": "established_track_states",
+    "tracking_association_included": false,
+    "state_fields": ["track_id", "timestamp", "position_xyz", "velocity_xyz", "acceleration_xyz", "state_uncertainty"]
+  },
+  "scenario_classes": {
+    "negative": {
+      "name": "apparent_group",
+      "independent_control": true,
+      "required_properties": ["spatial_proximity", "similar_headings", "similar_speeds", "common_operating_region", "temporary_formation_like_geometry", "independent_maneuver_timing", "relative_spacing_drift"]
+    },
+    "positive": {
+      "name": "coordinated_group",
+      "required_properties": ["bounded_relative_geometry", "correlated_heading", "synchronized_perturbed_turns", "coordinated_acceleration_deceleration", "bounded_relative_spacing_error", "coherent_centroid_translation", "realistic_perturbations"]
+    }
+  },
+  "scenario_families": {
+    "development_positive": "synchronized_heading_change_formation",
+    "held_out_positive": "coordinated_acceleration_deceleration_different_formation_geometry",
+    "anti_trivial_marginals": ["mean_speed", "altitude", "centroid_speed", "mean_pairwise_distance", "group_extent", "mean_heading", "trajectory_duration", "spatial_operating_region"],
+    "trivial_separation_thresholds": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK"
+  },
+  "seed_ranges": {
+    "exploratory": [101, 120],
+    "confirmatory": [201, 220],
+    "held_out_family": [301, 320],
+    "seed_algorithm_visible": false
+  },
+  "data_separation": {
+    "algorithm_visible_root": "data/algorithm_visible",
+    "evaluator_only_root": "data/evaluator_only",
+    "algorithm_visible_filename_pattern": "sample_[0-9]{4}.json",
+    "algorithm_visible_fields": ["track_id", "timestamp", "position_xyz", "velocity_xyz", "acceleration_xyz", "state_uncertainty"],
+    "evaluator_only_fields": ["ground_truth_object_id", "ground_truth_group_id", "ground_truth_coordination_state", "scenario_class", "scenario_variant", "coordination_start_time", "coordination_end_time", "simulator_control_variables", "seed"],
+    "predictions_root": "results/predictions",
+    "prediction_before_evaluation_required": true
+  },
+  "feature_windows_s": [5, 15, 30],
+  "models": {
+    "A_conventional_kinematic_baseline": {
+      "family": "logistic_regression",
+      "features": ["mean_pairwise_distance", "variance_pairwise_distance", "relative_position_variance", "heading_correlation", "velocity_correlation", "acceleration_correlation", "centroid_coherence", "formation_persistence"],
+      "spectral_features": false,
+      "neural_model": false,
+      "regularization": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK"
+    },
+    "B_temporal_relational_no_spectral": {
+      "family": "logistic_regression",
+      "graph": "G_t=(V_t,E_t)",
+      "edge_semantics": "relational_coherence_not_identity",
+      "edge_score": "equal_weight_arithmetic_mean_of_distance_velocity_heading_acceleration_geometry_uncertainty_components",
+      "spectral_features": false,
+      "features": ["edge_persistence", "edge_weight_variance", "relation_lifetime", "connected_structure_persistence", "topology_change_rate", "relative_geometry_stability", "temporal_coherence_score", "edge_count", "degree_summaries", "edge_node_ratio"],
+      "graph_parameters": {
+        "distance_gate_m": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK",
+        "velocity_gate_mps": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK",
+        "edge_weight_min": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK",
+        "sigma_distance": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK",
+        "sigma_velocity": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK",
+        "sigma_acceleration": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK",
+        "sigma_uncertainty": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK",
+        "minimum_valid_history": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK"
+      }
+    },
+    "C_temporal_relational_with_spectral": {
+      "inherits": "B_temporal_relational_no_spectral",
+      "spectral_features": ["eigenvalue_quantiles", "spectral_gap", "normalized_laplacian_std", "connectivity", "clustering", "edge_node_ratio", "temporal_spectral_change"],
+      "normalized_laplacian": "I - D^(-1/2) A D^(-1/2)"
+    }
+  },
+  "ablations": ["geometry_only", "instantaneous_kinematics_only", "temporal_relation_only", "spectral_only", "relation_plus_temporal", "relation_plus_temporal_plus_spectral"],
+  "metrics": ["precision", "recall", "F1", "balanced_accuracy", "confusion_matrix", "ROC_AUC_when_applicable", "detection_latency", "false_organization_duration", "organization_state_stability", "effect_size_A_vs_B", "effect_size_B_vs_C"],
+  "leakage_rules": {
+    "algorithm_visible_no_hidden_labels": true,
+    "opaque_filenames": true,
+    "opaque_track_ids": true,
+    "seed_not_feature": true,
+    "evaluator_directory_inaccessible_during_prediction": true,
+    "predictions_written_before_truth_load": true,
+    "failure_invalidates_run": true
+  },
+  "decision_statuses": ["GO", "PARTIAL GO", "NO-GO", "INCONCLUSIVE"],
+  "falsification_rules": ["B_worse_than_A", "B_approximately_equal_A_with_substantially_higher_complexity", "confirmatory_gain_disappears", "held_out_gain_disappears", "post_hoc_tuning_required", "C_no_reproducible_gain_over_B", "organization_collapses_to_proximity", "trivial_marginal_separation", "leakage_failure"],
+  "unresolved_parameters": ["trivial_separation_thresholds", "distance_gate_m", "velocity_gate_mps", "edge_weight_min", "sigma_distance", "sigma_velocity", "sigma_acceleration", "sigma_uncertainty", "minimum_valid_history", "logistic_regression_regularization"],
+  "implementation_prohibition": "No TFL-UAS-001B implementation is included in this protocol-freeze commit."
+}

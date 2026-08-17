@@ -10,7 +10,7 @@
 
 ## P1
 
-- Specify TFL-UAS-001B.
+- [x] Specify and freeze TFL-UAS-001B protocol v1.0.
 - Build four-object apparent-group simulator.
 - Build four-object coordinated-group simulator.
 - Establish algorithm-visible / evaluator-only data separation.

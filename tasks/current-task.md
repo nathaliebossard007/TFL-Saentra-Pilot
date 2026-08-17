@@ -1,9 +1,5 @@
 # Current Task
 
-The TFL-UAS-001A predecessor import is complete and frozen.
+Implement TFL-UAS-001B exactly according to the frozen v1.0 protocol.
 
-Next task:
-
-Specify and freeze TFL-UAS-001B experimental protocol before implementation.
-
-Do not implement TFL-UAS-001B until its protocol, data lineage, leakage controls, exploratory/confirmatory split, and decision rules have been documented and frozen.
+The protocol and configuration are frozen under `experiments/TFL-UAS-001B/`. Do not change them silently. Any scientific change requires a new protocol version.
