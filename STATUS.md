@@ -11,23 +11,26 @@ Frozen and verified.
 
 TFL-UAS-001B v1.0:
 Protocol — FROZEN
-Exploratory phase — COMPLETED for seeds 101–120
+Exploratory phase — COMPLETED
 Validation — FAILED anti-trivial-separation gate
 Scientific interpretation — NOT AUTHORIZED
-Historical review record — `REVIEW_REQUIRED.md`
+Historical review record preserved.
 
 TFL-UAS-001B v1.1:
-Protocol revision — AUTHORIZED
-Purpose — marginal-matched exploratory redesign + proper supervised Model A boundary
-Implementation/execution — EXPLORATORY ONLY
-Confirmatory/Held-out execution — NOT AUTHORIZED
+Protocol — FROZEN
+Exploratory redesign — COMPLETED
+Validation — FAILED anti-trivial-separation gate (`mean_pairwise_distance`, `group_extent`)
+Scientific interpretation — NOT AUTHORIZED
+Further automatic simulator tuning — NOT AUTHORIZED
 
-Next experiment:
-TFL-UAS-001B — Relational Organization Discrimination
+TFL-UAS-SPATIAL-001:
+Status — NEW EXPLORATORY BRANCH AUTHORIZED
+Purpose — Spatial Relational State Persistence
+Primary perspective — space -> relations -> organization -> state change
+Protocol v1.0 — NOT YET FROZEN
+Implementation — NOT STARTED
 
 Current operational task:
-REVIEW_REQUIRED — v1.1 anti-trivial-separation validation failed; no A/B/C interpretation or further execution authorized.
+Create and freeze TFL-UAS-SPATIAL-001 protocol v1.0 and configuration before implementation. Do not execute the exploratory experiment in the same protocol-freeze task.
 
-Confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited pending explicit scientific review.
-
-v1.1 exploratory validation stopped at the review gate. `experiments/TFL-UAS-001B/v1.1/REVIEW_REQUIRED_v1.1.json` records the failure; raw predictions were written before evaluator truth was loaded.
+TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
