@@ -63,10 +63,17 @@
 ## TFL-UAS-DYNAMIC-001
 
 - [x] Freeze protocol v1.0 and configuration with hashes.
-- [ ] Implement algorithm-visible/evaluator-only schema and leakage guards.
-- [ ] Implement D1–D6 synthetic dynamic scenarios.
-- [ ] Implement pair motion relations, registered lags/windows, lifetimes, reference distance, and recovery operators.
-- [ ] Write raw dynamic relational states before interpretation.
-- [ ] Run exploratory validation only; stop at review.
+- [x] Implement algorithm-visible/evaluator-only schema and leakage guards.
+- [x] Implement D1–D6 synthetic dynamic scenarios.
+- [x] Implement pair motion relations, registered lags/windows, lifetimes, reference distance, and recovery operators.
+- [x] Write raw dynamic relational states before interpretation.
+- [x] Run exploratory validation only; stop at review.
 - [ ] Review spatial-vs-motion persistence and D4/D5/D6 behavior.
 - [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
+
+## 2026-08-17 — DYNAMIC-001 exploratory run stopped at review
+
+- Generated 120 raw algorithm-visible samples across seeds 101–120 and D1–D6.
+- Implemented registered motion relations, lags 1/5/15/30 s, windows 5/15/30 s, relation lifetimes, reference-state distance, spatial-vs-motion change, and D6 recovery diagnostics.
+- Leakage, schema, determinism, raw-output ordering, and frozen-protocol checks passed.
+- Created `experiments/TFL-UAS-DYNAMIC-001/REVIEW_REQUIRED.md`; no scientific decision or extension is authorized.

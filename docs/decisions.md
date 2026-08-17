@@ -68,6 +68,14 @@
 - SPATIAL-001 protocol v1.0 must be frozen before implementation. Exploratory execution must stop at review before any benchmark/classification/confirmatory extension.
 - 001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 
+## 2026-08-17 — DYNAMIC-001 exploratory run stopped at review
+
+- Implemented the frozen v1.0 dynamic relational-state pipeline and generated 120 samples for seeds 101–120 across D1–D6.
+- Raw dynamic states were written before evaluator-only metadata was loaded; no classifier, benchmark, or 001B confirmatory/held-out execution occurred.
+- Schema, leakage, determinism, raw-output ordering, and frozen-protocol checks passed.
+- Descriptive diagnostics were recorded, but no GO/PARTIAL GO/NO-GO/INCONCLUSIVE decision was made.
+- Automatic continuation stopped at `experiments/TFL-UAS-DYNAMIC-001/REVIEW_REQUIRED.md` before any extension.
+
 ## 2026-08-17 — TFL-UAS-SPATIAL-001 protocol v1.0 frozen
 
 - Frozen a separate spatial relational-state persistence protocol before implementation.

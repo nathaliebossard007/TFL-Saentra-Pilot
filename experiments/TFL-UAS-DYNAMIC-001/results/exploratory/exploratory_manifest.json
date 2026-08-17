@@ -1,0 +1,1 @@
+{"sample_count":120,"seed_range":[101,120],"scenario_count":6,"windows_s":[5,15,30],"lags_s":[1,5,15,30],"raw_written_before_truth":true,"classifier_used":false}

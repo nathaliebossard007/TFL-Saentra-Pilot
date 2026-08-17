@@ -31,7 +31,8 @@ $required = @(
   "experiments/TFL-UAS-DYNAMIC-001/README.md",
   "experiments/TFL-UAS-DYNAMIC-001/TFL-UAS-DYNAMIC-001_PROTOCOL_v1.0.md",
   "experiments/TFL-UAS-DYNAMIC-001/config/tfl_uas_dynamic_001_protocol_v1.json",
-  "experiments/TFL-UAS-DYNAMIC-001/PROTOCOL_FREEZE.md"
+  "experiments/TFL-UAS-DYNAMIC-001/PROTOCOL_FREEZE.md",
+  "experiments/TFL-UAS-DYNAMIC-001/REVIEW_REQUIRED.md"
 )
 
 foreach ($path in $required) {

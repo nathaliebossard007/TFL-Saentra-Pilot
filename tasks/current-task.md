@@ -1,8 +1,8 @@
 # Current Task
 
-Implement **TFL-UAS-DYNAMIC-001 exploratory v1.0 exactly as frozen**.
+REVIEW_REQUIRED: review the completed **TFL-UAS-DYNAMIC-001 exploratory v1.0** before any extension.
 
-The protocol-freeze task is complete. Do not modify the frozen protocol or
+The protocol-freeze and exploratory implementation tasks are complete. Do not modify the frozen protocol or
 configuration, do not execute 001B confirmatory/held-out seeds, and do not
 add classification or benchmark extensions. Write raw dynamic relational
 states before interpretation and stop at `REVIEW_REQUIRED` after the
@@ -13,6 +13,8 @@ Frozen files:
 - `experiments/TFL-UAS-DYNAMIC-001/TFL-UAS-DYNAMIC-001_PROTOCOL_v1.0.md`
 - `experiments/TFL-UAS-DYNAMIC-001/config/tfl_uas_dynamic_001_protocol_v1.json`
 - `experiments/TFL-UAS-DYNAMIC-001/PROTOCOL_FREEZE.md`
+
+Review record: `experiments/TFL-UAS-DYNAMIC-001/REVIEW_REQUIRED.md`.
 
 The prior protocol-freeze task description follows for provenance:
 
