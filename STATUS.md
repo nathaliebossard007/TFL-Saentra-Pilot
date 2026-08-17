@@ -24,16 +24,24 @@ Scientific interpretation — NOT AUTHORIZED
 Further automatic simulator tuning — NOT AUTHORIZED
 
 TFL-UAS-SPATIAL-001:
-Status — EXPLORATORY RUN COMPLETED; REVIEW_REQUIRED
+Status — EXPLORATORY RUN COMPLETED; REVIEWED AS MEASUREMENT-LIMITED
 Purpose — Spatial Relational State Persistence
 Primary perspective — space -> relations -> organization -> state change
 Protocol v1.0 — FROZEN
 Implementation — COMPLETED FOR EXPLORATORY RUN ONLY
+Interpretation — promising transformation-invariance diagnostics, but persistent-organization detection not validated because adjacent-frame persistence can overrate block-stable apparent organization
+
+TFL-UAS-DYNAMIC-001:
+Status — NEW EXPLORATORY BRANCH AUTHORIZED
+Purpose — Relational Motion-State Persistence
+Primary perspective — spatial relations -> motion relations -> persistent relational dynamics -> organization
+Protocol v1.0 — NOT YET FROZEN
+Implementation — NOT STARTED
+Primary missing layer — velocity correlation / relational motion evolution over registered temporal windows
 
 Current operational task:
-REVIEW_REQUIRED — review SPATIAL-001 exploratory invariance, persistence, apparent-control, and recovery diagnostics before any extension.
+Create and freeze TFL-UAS-DYNAMIC-001 protocol v1.0 and configuration before implementation. Do not execute the experiment in the same protocol-freeze task.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 
-SPATIAL-001 raw states and diagnostics are written. No classifier, benchmark,
-or confirmatory extension has started.
+No DYNAMIC-001 classifier, benchmark, implementation, or exploratory execution has started.
