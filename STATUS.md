@@ -14,12 +14,12 @@ Protocol — FROZEN
 Exploratory phase — COMPLETED for seeds 101–120
 Implementation — EXPLORATORY ONLY
 Confirmatory/Held-out execution — NOT AUTHORIZED
-Anti-trivial-separation gate — FAILED; review required
+Anti-trivial-separation gate — FAILED; REVIEW_REQUIRED.md created
 
 Next experiment:
 TFL-UAS-001B — Relational Organization Discrimination
 
 Current operational task:
-Review TFL-UAS-001B exploratory results and freeze unresolved protocol parameters before confirmatory execution.
+REVIEW_REQUIRED — decide whether a new 001B protocol version and simulator redesign are scientifically justified.
 
-No 001B implementation has started.
+No confirmatory or held-out execution has started.

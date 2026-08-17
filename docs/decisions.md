@@ -30,3 +30,10 @@
 - The anti-trivial-separation gate failed: seven of eight one-variable audits reached balanced accuracy 1.0. Exploratory A/B/C metrics are therefore not interpreted as organization evidence.
 - Confirmatory seeds 201–220 and held-out seeds 301–320 were not executed. No GO/NO-GO conclusion was changed.
 - Next action is review of the exploratory freeze proposal and simulator/modeling concerns before any confirmatory authorization.
+
+## 2026-08-17 — Automatic continuation stopped at review gate
+
+- Created `REVIEW_REQUIRED.md` because the exploratory anti-trivial-separation validation failed.
+- Preserved all exploratory outputs as technical diagnostics only; no GO, PARTIAL GO, NO-GO, or INCONCLUSIVE conclusion was made for 001B.
+- Confirmatory seeds 201–220 and held-out seeds 301–320 remain unauthorized.
+- The frozen v1.0 protocol and hashes were not changed.

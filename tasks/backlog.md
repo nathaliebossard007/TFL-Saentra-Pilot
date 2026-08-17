@@ -18,7 +18,8 @@
 - [x exploratory] Implement relational model without spectral features.
 - [x exploratory] Implement relational model with spectral features.
 - [x] Run exploratory seeds 101–120.
-- Freeze feature definitions.
+- [review required] Review failed anti-trivial-separation validation and baseline-training interpretation.
+- Freeze feature definitions only after review.
 - Run confirmatory seeds.
 - Run ablations.
 - Produce research report.

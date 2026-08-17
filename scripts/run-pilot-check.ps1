@@ -30,11 +30,11 @@ foreach ($path in $required) {
 
 $status = Get-Content -Raw "STATUS.md"
 $current = Get-Content -Raw "tasks/current-task.md"
-if ($status -notmatch "No 001B implementation has started") {
-  throw "STATUS.md does not preserve the no-implementation gate."
+if ($status -notmatch "No confirmatory or held-out execution has started") {
+  throw "STATUS.md does not preserve the confirmatory/held-out stop gate."
 }
-if ($current -notmatch "Review TFL-UAS-001B exploratory results") {
-  throw "Current task is not the exploratory-review gate."
+if ($current -notmatch "REVIEW_REQUIRED") {
+  throw "Current task is not marked REVIEW_REQUIRED."
 }
 
 $frozenRoot = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001A"
