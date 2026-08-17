@@ -37,3 +37,12 @@
 - Preserved all exploratory outputs as technical diagnostics only; no GO, PARTIAL GO, NO-GO, or INCONCLUSIVE conclusion was made for 001B.
 - Confirmatory seeds 201–220 and held-out seeds 301–320 remain unauthorized.
 - The frozen v1.0 protocol and hashes were not changed.
+
+## 2026-08-17 — TFL-UAS-001B v1.1 exploratory redesign authorized
+
+- Scientific review accepts that a new protocol version is justified because v1.0 failed the anti-trivial-separation gate and the intended supervised baseline was not implemented as a fitted logistic-regression model.
+- The v1.0 protocol, hashes, source and exploratory outputs remain preserved as a failed-validation record and must not be overwritten or reinterpreted.
+- v1.1 must redesign the simulator so positive and negative classes substantially overlap in simple macroscopic marginals; the intended class signal should reside primarily in persistent temporal relational dependence rather than global speed, altitude, heading, scale, duration, or operating region.
+- v1.1 must define a proper supervised training boundary for Model A while keeping test/confirmatory ground truth evaluator-only until predictions are written.
+- Only exploratory v1.1 work is authorized. Confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited until a subsequent explicit review authorizes them.
+- A repeated anti-trivial-separation failure must trigger another review gate rather than further automatic tuning.
