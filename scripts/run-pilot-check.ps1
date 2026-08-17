@@ -26,7 +26,8 @@ $required = @(
   "experiments/TFL-UAS-SPATIAL-001/README.md",
   "experiments/TFL-UAS-SPATIAL-001/TFL-UAS-SPATIAL-001_PROTOCOL_v1.0.md",
   "experiments/TFL-UAS-SPATIAL-001/config/tfl_uas_spatial_001_protocol_v1.json",
-  "experiments/TFL-UAS-SPATIAL-001/PROTOCOL_FREEZE.md"
+  "experiments/TFL-UAS-SPATIAL-001/PROTOCOL_FREEZE.md",
+  "experiments/TFL-UAS-SPATIAL-001/REVIEW_REQUIRED.md"
 )
 
 foreach ($path in $required) {

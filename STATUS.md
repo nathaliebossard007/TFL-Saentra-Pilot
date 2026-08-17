@@ -24,13 +24,16 @@ Scientific interpretation — NOT AUTHORIZED
 Further automatic simulator tuning — NOT AUTHORIZED
 
 TFL-UAS-SPATIAL-001:
-Status — NEW EXPLORATORY BRANCH AUTHORIZED
+Status — EXPLORATORY RUN COMPLETED; REVIEW_REQUIRED
 Purpose — Spatial Relational State Persistence
 Primary perspective — space -> relations -> organization -> state change
 Protocol v1.0 — FROZEN
-Implementation — NOT STARTED
+Implementation — COMPLETED FOR EXPLORATORY RUN ONLY
 
 Current operational task:
-Implement TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen. Do not execute benchmark, classification, or confirmatory extensions.
+REVIEW_REQUIRED — review SPATIAL-001 exploratory invariance, persistence, apparent-control, and recovery diagnostics before any extension.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
+
+SPATIAL-001 raw states and diagnostics are written. No classifier, benchmark,
+or confirmatory extension has started.

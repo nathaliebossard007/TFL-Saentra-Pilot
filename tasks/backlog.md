@@ -35,11 +35,11 @@
 ## TFL-UAS-SPATIAL-001
 
 - [x] Freeze protocol v1.0 and configuration with hashes.
-- [ ] Implement algorithm-visible/evaluator-only schema and leakage guards.
-- [ ] Implement S1–S5 synthetic exploratory scenarios.
-- [ ] Implement rigid relational state, shape state, local state, and global graph state.
-- [ ] Write raw state trajectories and diagnostics before interpretation.
-- [ ] Run exploratory validation only; stop at review.
+- [x] Implement algorithm-visible/evaluator-only schema and leakage guards.
+- [x] Implement S1–S5 synthetic exploratory scenarios.
+- [x] Implement rigid relational state, shape state, local state, and global graph state.
+- [x] Write raw state trajectories and diagnostics before interpretation.
+- [x] Run exploratory validation only; stop at review.
 - [ ] Review invariance, persistence, disturbance/recovery, and apparent-control results.
 - [ ] Do not execute classifier, benchmark, 001B confirmatory, or held-out extensions without explicit authorization.
 
@@ -51,3 +51,11 @@
 - The anti-triviality gate failed again: mean pairwise distance and group extent each had one-variable balanced accuracy 1.0.
 - Automatic continuation stopped at `REVIEW_REQUIRED_v1.1.json`; A/B/C metrics are not interpreted.
 - Next action is human review; no confirmatory authorization.
+
+## 2026-08-17 — SPATIAL-001 exploratory run stopped at review
+
+- Generated 100 raw algorithm-visible track samples across seeds 101–120 and S1–S5.
+- Constructed rigid, shape, local-neighborhood, weighted-graph, and normalized-Laplacian state diagnostics.
+- Leakage, schema, determinism, raw-output ordering, and frozen-protocol guards passed.
+- Evaluator metadata was loaded only after raw relational states were serialized.
+- Created `experiments/TFL-UAS-SPATIAL-001/REVIEW_REQUIRED.md`; no scientific decision or extension is authorized.

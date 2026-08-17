@@ -1,0 +1,1 @@
+{"sample_id":"sample_0025","scenario_id":"S5_perturbation_recovery","seed":105,"expected_property":{"S1_global_translation":"rigid_invariant","S2_global_rotation":"rigid_invariant","S3_independent_random_motion":"persistence_decay","S4_apparent_spatial_organization":"low_false_persistence","S5_perturbation_recovery":"recovery"},"perturbation_start_s":70,"perturbation_end_s":100}

@@ -75,3 +75,11 @@
 - Configuration SHA-256: `88f47cce9a2b4089813320092e437956a2ea3d2c45f08c8e260b3262b08b9ac6`.
 - Registered S1–S5 scenarios, rigid and shape states, local/global relational layers, graph/Laplacian diagnostics, persistence measures, and recovery measurements.
 - No implementation or exploratory execution occurred in the freeze task. The next task is implementation exactly as frozen.
+
+## 2026-08-17 — TFL-UAS-SPATIAL-001 exploratory run stopped at review
+
+- Implemented the frozen v1.0 relational-state pipeline and generated 100 samples for seeds 101–120 across S1–S5.
+- Raw relational states were written before evaluator-only metadata was loaded; no classifier or 001B confirmatory/held-out execution occurred.
+- Schema, leakage, determinism, raw-output ordering, and frozen-protocol guards passed.
+- Descriptive diagnostics were recorded, but no GO/PARTIAL GO/NO-GO/INCONCLUSIVE decision was made.
+- Automatic continuation stopped at `experiments/TFL-UAS-SPATIAL-001/REVIEW_REQUIRED.md` before any extension.

@@ -1,8 +1,8 @@
 # Current Task
 
-Implement **TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen**.
+REVIEW_REQUIRED: review the completed **TFL-UAS-SPATIAL-001 exploratory v1.0** before any extension.
 
-The protocol-freeze task is complete. Do not modify the frozen protocol or
+The protocol-freeze and exploratory implementation tasks are complete. Do not modify the frozen protocol or
 configuration, do not execute 001B confirmatory/held-out seeds, and do not
 add classification or benchmark extensions. Write raw relational-state
 outputs before interpretation and stop at `REVIEW_REQUIRED` after the
@@ -131,3 +131,9 @@ Confirmatory seeds 201–220 and held-out seeds 301–320 from 001B remain prohi
 6. Stop at `REVIEW_REQUIRED` before any later benchmark/classification/confirmatory extension.
 
 At completion of the protocol-freeze task, set the next task to implement **TFL-UAS-SPATIAL-001 exploratory v1.0 exactly as frozen**. Do not execute the exploratory run in the same protocol-freeze task.
+
+## Current gate
+
+REVIEW_REQUIRED: the exploratory implementation and run are complete. Review
+`experiments/TFL-UAS-SPATIAL-001/REVIEW_REQUIRED.md` before any benchmark,
+classifier, or confirmatory extension.
