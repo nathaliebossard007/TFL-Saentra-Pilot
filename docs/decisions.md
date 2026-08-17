@@ -83,3 +83,16 @@
 - Schema, leakage, determinism, raw-output ordering, and frozen-protocol guards passed.
 - Descriptive diagnostics were recorded, but no GO/PARTIAL GO/NO-GO/INCONCLUSIVE decision was made.
 - Automatic continuation stopped at `experiments/TFL-UAS-SPATIAL-001/REVIEW_REQUIRED.md` before any extension.
+
+## 2026-08-17 — Open TFL-UAS-DYNAMIC-001 exploratory branch
+
+- Scientific review of SPATIAL-001 v1.0 identified a measurement limitation rather than a direct falsification of relational organization: the current global persistence score is dominated by adjacent-frame spatial quietness and can rate block-stable apparent organization as persistent.
+- The SPATIAL-001 v1.0 record remains frozen and must not be patched or reinterpreted after the fact.
+- Open a separate experiment: `TFL-UAS-DYNAMIC-001 — Relational Motion-State Persistence`.
+- Primary hypothesis: organization may be encoded more reliably in the temporal evolution of relations than in spatial configuration alone.
+- Velocity correlation is elevated from an incidental diagnostic to an explicit relational layer. Required dynamic quantities include relative velocity, velocity-direction coherence, speed correlation, relative-velocity stability, distance derivative, and acceleration coherence across registered time windows.
+- The experiment must separate spatial-state change from motion-organization persistence. In particular, an organized expansion/contraction may change rigid geometry while preserving dynamic organization.
+- Required temporal operators include lagged persistence, relation lifetime, window-to-window relational-state distance, and reference-state distance/recovery.
+- No classifier, neural model, learned edge weight, or benchmark is authorized in DYNAMIC-001 v1.0.
+- DYNAMIC-001 protocol/config must be frozen before implementation; protocol freeze and execution are separate tasks.
+- 001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
