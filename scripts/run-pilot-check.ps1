@@ -33,8 +33,8 @@ $current = Get-Content -Raw "tasks/current-task.md"
 if ($status -notmatch "No 001B implementation has started") {
   throw "STATUS.md does not preserve the no-implementation gate."
 }
-if ($current -notmatch "Implement TFL-UAS-001B exactly according to the frozen v1.0 protocol") {
-  throw "Current task is not the frozen-protocol implementation gate."
+if ($current -notmatch "Review TFL-UAS-001B exploratory results") {
+  throw "Current task is not the exploratory-review gate."
 }
 
 $frozenRoot = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-001A"

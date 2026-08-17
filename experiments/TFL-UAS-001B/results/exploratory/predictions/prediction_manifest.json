@@ -1,0 +1,18 @@
+{
+  "sample_count": 40,
+  "prediction_count": 360,
+  "models": [
+    "A_conventional_kinematic_baseline",
+    "B_temporal_relational_no_spectral",
+    "C_temporal_relational_with_spectral"
+  ],
+  "ablations": [
+    "geometry_only",
+    "instantaneous_kinematics_only",
+    "temporal_relation_only",
+    "spectral_only",
+    "relation_plus_temporal",
+    "relation_plus_temporal_plus_spectral"
+  ],
+  "truth_loaded": false
+}

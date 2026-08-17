@@ -1,0 +1,576 @@
+{
+  "status": "EXPLORATORY \u2014 NOT CONFIRMATORY EVIDENCE",
+  "rows": [
+    {
+      "sample_id": "sample_0001",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.401324898304242,
+        "altitude": 925.8181240814916,
+        "centroid_speed": 26.400556719331703,
+        "mean_pairwise_distance": 452.93831685235426,
+        "group_extent": 286.2471270939226,
+        "mean_heading": 0.9999220831853853,
+        "trajectory_duration": 180.0,
+        "operating_region": 11408.242113154696
+      }
+    },
+    {
+      "sample_id": "sample_0002",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 925.0507808121547,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.79918341074057,
+        "group_extent": 295.15688458195217,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.118695787292
+      }
+    },
+    {
+      "sample_id": "sample_0003",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.40042652647457,
+        "altitude": 925.8660077099445,
+        "centroid_speed": 26.399658512894696,
+        "mean_pairwise_distance": 453.0852695386687,
+        "group_extent": 286.51495977716394,
+        "mean_heading": 0.9999220978591951,
+        "trajectory_duration": 180.0,
+        "operating_region": 11407.444949773482
+      }
+    },
+    {
+      "sample_id": "sample_0004",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.7287412941988,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.6110011417445,
+        "group_extent": 295.1172454548803,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.090714410222
+      }
+    },
+    {
+      "sample_id": "sample_0005",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.399536034636572,
+        "altitude": 925.9213564654697,
+        "centroid_speed": 26.39876818400652,
+        "mean_pairwise_distance": 452.9120495237593,
+        "group_extent": 286.1806860976059,
+        "mean_heading": 0.9999221123208916,
+        "trajectory_duration": 180.0,
+        "operating_region": 11408.07389711464
+      }
+    },
+    {
+      "sample_id": "sample_0006",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.9293071243094,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.9381890050224,
+        "group_extent": 295.3099496372007,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.039140204419
+      }
+    },
+    {
+      "sample_id": "sample_0007",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.398653469949725,
+        "altitude": 925.8680187665746,
+        "centroid_speed": 26.39788577978566,
+        "mean_pairwise_distance": 453.4594919053296,
+        "group_extent": 286.3549789594844,
+        "mean_heading": 0.9999221265656295,
+        "trajectory_duration": 180.0,
+        "operating_region": 11407.996215933703
+      }
+    },
+    {
+      "sample_id": "sample_0008",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.4743734157458,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.27162639130637,
+        "group_extent": 294.60376120441987,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.43394036188
+      }
+    },
+    {
+      "sample_id": "sample_0009",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.397778878132318,
+        "altitude": 926.179284955801,
+        "centroid_speed": 26.397011345963204,
+        "mean_pairwise_distance": 453.63731073925044,
+        "group_extent": 286.63150836832415,
+        "mean_heading": 0.9999221405953099,
+        "trajectory_duration": 180.0,
+        "operating_region": 11407.478298019338
+      }
+    },
+    {
+      "sample_id": "sample_0010",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 925.0503815883977,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.53882149382,
+        "group_extent": 294.327259839779,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.901428357734
+      }
+    },
+    {
+      "sample_id": "sample_0011",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.396912174185616,
+        "altitude": 925.9744881574587,
+        "centroid_speed": 26.396144797375143,
+        "mean_pairwise_distance": 453.0886023147659,
+        "group_extent": 286.9823974788213,
+        "mean_heading": 0.9999221543926065,
+        "trajectory_duration": 180.0,
+        "operating_region": 11407.553288382598
+      }
+    },
+    {
+      "sample_id": "sample_0012",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.7429422499999,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.0631485589557,
+        "group_extent": 294.4077066721915,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.115358755524
+      }
+    },
+    {
+      "sample_id": "sample_0013",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.396053456632472,
+        "altitude": 925.8563244820441,
+        "centroid_speed": 26.39528623274749,
+        "mean_pairwise_distance": 453.1301427509101,
+        "group_extent": 285.9601182209945,
+        "mean_heading": 0.9999221679787572,
+        "trajectory_duration": 180.0,
+        "operating_region": 11406.920542917127
+      }
+    },
+    {
+      "sample_id": "sample_0014",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 925.1284346464089,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.92073187837593,
+        "group_extent": 293.92361846777163,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.410347168508
+      }
+    },
+    {
+      "sample_id": "sample_0015",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.395202712303835,
+        "altitude": 925.9361601616022,
+        "centroid_speed": 26.394435639028064,
+        "mean_pairwise_distance": 452.84753921822124,
+        "group_extent": 286.0433579208103,
+        "mean_heading": 0.9999221813651845,
+        "trajectory_duration": 180.0,
+        "operating_region": 11406.2552950663
+      }
+    },
+    {
+      "sample_id": "sample_0016",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.667226635359,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.34525360689815,
+        "group_extent": 293.6895985635359,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.347628700276
+      }
+    },
+    {
+      "sample_id": "sample_0017",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.39435991964173,
+        "altitude": 925.8846204613261,
+        "centroid_speed": 26.393592994626573,
+        "mean_pairwise_distance": 453.7778899685038,
+        "group_extent": 286.4978772375691,
+        "mean_heading": 0.999922194548447,
+        "trajectory_duration": 180.0,
+        "operating_region": 11406.153483821823
+      }
+    },
+    {
+      "sample_id": "sample_0018",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 925.2613346049725,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.3811088700939,
+        "group_extent": 293.0063598618784,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11398.996672911602
+      }
+    },
+    {
+      "sample_id": "sample_0019",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.393525099457037,
+        "altitude": 925.833870832873,
+        "centroid_speed": 26.392758319812284,
+        "mean_pairwise_distance": 453.45233660725756,
+        "group_extent": 286.79641418232046,
+        "mean_heading": 0.9999222074729047,
+        "trajectory_duration": 180.0,
+        "operating_region": 11405.952102298344
+      }
+    },
+    {
+      "sample_id": "sample_0020",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.9287247265192,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.053746045524,
+        "group_extent": 293.02907587292816,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11398.833288823205
+      }
+    },
+    {
+      "sample_id": "sample_0021",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.392698305988475,
+        "altitude": 925.7440957002761,
+        "centroid_speed": 26.391931669495364,
+        "mean_pairwise_distance": 453.09351610488335,
+        "group_extent": 286.2358460607735,
+        "mean_heading": 0.9999222202080407,
+        "trajectory_duration": 180.0,
+        "operating_region": 11406.107625457182
+      }
+    },
+    {
+      "sample_id": "sample_0022",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.7405477790056,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.3348437833022,
+        "group_extent": 292.52042837200736,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.451913520717
+      }
+    },
+    {
+      "sample_id": "sample_0023",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.39187945911634,
+        "altitude": 925.8167508729283,
+        "centroid_speed": 26.391112963344177,
+        "mean_pairwise_distance": 452.9787397990478,
+        "group_extent": 285.73041594843465,
+        "mean_heading": 0.9999222327314511,
+        "trajectory_duration": 180.0,
+        "operating_region": 11405.457639446133
+      }
+    },
+    {
+      "sample_id": "sample_0024",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.8738065220995,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 457.97990095592,
+        "group_extent": 292.5284054346224,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11398.900718366021
+      }
+    },
+    {
+      "sample_id": "sample_0025",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.39106866805592,
+        "altitude": 925.8768601008287,
+        "centroid_speed": 26.39030231055361,
+        "mean_pairwise_distance": 454.19114904353466,
+        "group_extent": 286.6647724677717,
+        "mean_heading": 0.9999222450411019,
+        "trajectory_duration": 180.0,
+        "operating_region": 11406.077402444751
+      }
+    },
+    {
+      "sample_id": "sample_0026",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.9275955069061,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.5325820094825,
+        "group_extent": 293.5129913278085,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.8037145
+      }
+    },
+    {
+      "sample_id": "sample_0027",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.390265874379793,
+        "altitude": 925.3454371395028,
+        "centroid_speed": 26.389499652569175,
+        "mean_pairwise_distance": 454.151555032481,
+        "group_extent": 286.74803868139963,
+        "mean_heading": 0.9999222571231177,
+        "trajectory_duration": 180.0,
+        "operating_region": 11406.244171827348
+      }
+    },
+    {
+      "sample_id": "sample_0028",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.977134756906,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.58056429879446,
+        "group_extent": 293.4553927237569,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.562478700276
+      }
+    },
+    {
+      "sample_id": "sample_0029",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.389471078026396,
+        "altitude": 925.6877641491712,
+        "centroid_speed": 26.388704989706444,
+        "mean_pairwise_distance": 453.26877838878346,
+        "group_extent": 286.27311736279927,
+        "mean_heading": 0.9999222690171826,
+        "trajectory_duration": 180.0,
+        "operating_region": 11405.364411328728
+      }
+    },
+    {
+      "sample_id": "sample_0030",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.9160621988949,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 458.0166987365195,
+        "group_extent": 293.32310887661146,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.176334237569
+      }
+    },
+    {
+      "sample_id": "sample_0031",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.38868434449803,
+        "altitude": 925.7304322127071,
+        "centroid_speed": 26.387918387037985,
+        "mean_pairwise_distance": 453.4577100085554,
+        "group_extent": 286.71980459300187,
+        "mean_heading": 0.9999222806793288,
+        "trajectory_duration": 180.0,
+        "operating_region": 11405.263637146409
+      }
+    },
+    {
+      "sample_id": "sample_0032",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.9723847831491,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.4481426170949,
+        "group_extent": 294.68913380847147,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.454790935082
+      }
+    },
+    {
+      "sample_id": "sample_0033",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.387905660666956,
+        "altitude": 925.670032205801,
+        "centroid_speed": 26.387139831929947,
+        "mean_pairwise_distance": 453.51965045823647,
+        "group_extent": 286.394933451197,
+        "mean_heading": 0.9999222921587659,
+        "trajectory_duration": 180.0,
+        "operating_region": 11405.17930446547
+      }
+    },
+    {
+      "sample_id": "sample_0034",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.9812748687846,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.5073203773303,
+        "group_extent": 295.43221716574584,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.736315399174
+      }
+    },
+    {
+      "sample_id": "sample_0035",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.38713500706715,
+        "altitude": 925.7796641201658,
+        "centroid_speed": 26.38636930424397,
+        "mean_pairwise_distance": 453.71887952109097,
+        "group_extent": 286.603640825046,
+        "mean_heading": 0.9999223033881954,
+        "trajectory_duration": 180.0,
+        "operating_region": 11405.48113685221
+      }
+    },
+    {
+      "sample_id": "sample_0036",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.862505269337,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.7614869038765,
+        "group_extent": 296.1832290313075,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.364980274862
+      }
+    },
+    {
+      "sample_id": "sample_0037",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.38637244573096,
+        "altitude": 925.8795129779005,
+        "centroid_speed": 26.385606866542364,
+        "mean_pairwise_distance": 453.07748593527197,
+        "group_extent": 286.7463147955801,
+        "mean_heading": 0.9999223144198279,
+        "trajectory_duration": 180.0,
+        "operating_region": 11404.198317570443
+      }
+    },
+    {
+      "sample_id": "sample_0038",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.8955216505526,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.5884094658133,
+        "group_extent": 296.5187332688766,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.321959234807
+      }
+    },
+    {
+      "sample_id": "sample_0039",
+      "label": 0,
+      "marginals": {
+        "mean_speed": 26.38561792282842,
+        "altitude": 925.794575404696,
+        "centroid_speed": 26.38485246507742,
+        "mean_pairwise_distance": 453.49826284945317,
+        "group_extent": 287.0538680460405,
+        "mean_heading": 0.9999223252624584,
+        "trajectory_duration": 180.0,
+        "operating_region": 11403.881420295578
+      }
+    },
+    {
+      "sample_id": "sample_0040",
+      "label": 1,
+      "marginals": {
+        "mean_speed": 27.388049164513152,
+        "altitude": 924.9951207279006,
+        "centroid_speed": 27.387077285925017,
+        "mean_pairwise_distance": 459.49696785977727,
+        "group_extent": 296.82570256169424,
+        "mean_heading": 0.9999055742283638,
+        "trajectory_duration": 180.0,
+        "operating_region": 11399.972223716852
+      }
+    }
+  ],
+  "one_variable_balanced_accuracy": {
+    "mean_speed": 1.0,
+    "altitude": 1.0,
+    "centroid_speed": 1.0,
+    "mean_pairwise_distance": 1.0,
+    "group_extent": 1.0,
+    "mean_heading": 1.0,
+    "trajectory_duration": 0.5,
+    "operating_region": 1.0
+  },
+  "threshold_status": "TO_BE_FROZEN_AFTER_EXPLORATORY_SANITY_CHECK"
+}

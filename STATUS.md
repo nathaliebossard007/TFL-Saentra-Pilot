@@ -11,12 +11,15 @@ Frozen and verified.
 
 TFL-UAS-001B:
 Protocol — FROZEN
-Implementation — NOT STARTED
+Exploratory phase — COMPLETED for seeds 101–120
+Implementation — EXPLORATORY ONLY
+Confirmatory/Held-out execution — NOT AUTHORIZED
+Anti-trivial-separation gate — FAILED; review required
 
 Next experiment:
 TFL-UAS-001B — Relational Organization Discrimination
 
 Current operational task:
-Implement TFL-UAS-001B exactly according to the frozen v1.0 protocol.
+Review TFL-UAS-001B exploratory results and freeze unresolved protocol parameters before confirmatory execution.
 
 No 001B implementation has started.

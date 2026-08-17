@@ -1,0 +1,10 @@
+model,sample_count,precision,recall,F1,balanced_accuracy,ROC_AUC,detection_latency_s,false_organization_duration_s,organization_state_stability
+A_conventional_kinematic_baseline,40,0.5,1.0,0.6666666666666666,0.5,1.0,0.0,180.0,0.6903547164437775
+B_temporal_relational_no_spectral,40,0.0,0.0,0.0,0.5,1.0,180.0,0.0,0.3842615711228498
+C_temporal_relational_with_spectral,40,0.5,1.0,0.6666666666666666,0.5,1.0,0.0,180.0,0.520758125231474
+geometry_only,40,0.0,0.0,0.0,0.5,0.53,180.0,0.0,0.344960611460744
+instantaneous_kinematics_only,40,0.5,1.0,0.6666666666666666,0.5,1.0,0.0,180.0,0.8979804352522545
+relation_plus_temporal,40,0.0,0.0,0.0,0.5,1.0,180.0,0.0,0.3842615711228498
+relation_plus_temporal_plus_spectral,40,0.5,1.0,0.6666666666666666,0.5,1.0,0.0,180.0,0.520758125231474
+spectral_only,40,0.5,1.0,0.6666666666666666,0.5,1.0,0.0,180.0,0.6848624860956626
+temporal_relation_only,40,0.0,0.0,0.0,0.5,0.5,180.0,0.0,0.23853751994813646

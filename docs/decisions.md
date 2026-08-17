@@ -21,3 +21,12 @@
 - Recorded protocol SHA-256 `73fb85b80f8fde41b285f8208e894b0846d2832e60fd0bd1413fddc1e2041f73`.
 - Recorded configuration SHA-256 `6dc01ba9c0d06dfb6bf26d5a00bf276193d084afd679f84ffeb1283e5d8af14a`.
 - No TFL-UAS-001B implementation or result was created.
+
+## 2026-08-17 — TFL-UAS-001B exploratory phase completed
+
+- Executed exploratory seeds 101–120 only: 40 opaque samples, balanced 20 apparent-group and 20 coordinated-group samples.
+- Implemented separated simulator, label-free prediction path, evaluator-after-prediction path, Models A/B/C, six required ablations, diagnostics, and leakage tests.
+- Determinism and schema/leakage checks passed; 001A manifest and 001B protocol hash checks passed.
+- The anti-trivial-separation gate failed: seven of eight one-variable audits reached balanced accuracy 1.0. Exploratory A/B/C metrics are therefore not interpreted as organization evidence.
+- Confirmatory seeds 201–220 and held-out seeds 301–320 were not executed. No GO/NO-GO conclusion was changed.
+- Next action is review of the exploratory freeze proposal and simulator/modeling concerns before any confirmatory authorization.

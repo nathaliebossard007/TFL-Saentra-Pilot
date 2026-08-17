@@ -1,0 +1,17 @@
+{
+  "status": "CANDIDATE_RANGES_RECORDED_BEFORE_CLASSIFICATION_RESULTS",
+  "selection_priority": ["numerical_stability", "physical_interpretability", "balanced_graph_density", "anti_trivial_separation_validity", "classification_diagnostics"],
+  "candidates": {
+    "trivial_separation_thresholds": "audit before interpretation; no value selected yet",
+    "distance_gate_m": [1500, 2500, 3500],
+    "velocity_gate_mps": [60, 80, 100],
+    "edge_weight_min": [0.25, 0.35, 0.45],
+    "sigma_distance": [25, 50, 100],
+    "sigma_velocity": [5, 10, 20],
+    "sigma_acceleration": [0.5, 1.0, 2.0],
+    "sigma_uncertainty": [25, 50, 100],
+    "minimum_valid_history": [5, 10, 15],
+    "logistic_regression_regularization": [0.1, 1.0, 10.0]
+  },
+  "exploratory_selection_policy": "Use the middle physically interpretable candidate unless numerical stability, graph density, or anti-trivial-separation validation requires a documented choice. Do not select using A/B/C performance advantage."
+}
