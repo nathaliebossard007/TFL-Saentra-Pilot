@@ -44,15 +44,24 @@ Review finding — genuine pair operators improved D3/D6 sensitivity and preserv
 Scientific interpretation — NO GO/NO-GO DECISION; operator hierarchy remains under study
 
 TFL-UAS-DYNAMIC-001 v1.2:
-Status — EXPLORATORY RUN COMPLETED; REVIEW REQUIRED
+Status — EXPLORATORY RUN COMPLETED; REVIEWED AS DIAGNOSTIC-CORRECTION REQUIRED
 Purpose — couple relational motion to time-integrated relative spatial occupancy
-Scope — operator revision only; reuse unchanged D1–D6 exploratory data; no simulator tuning
+Scope — operator revision only; unchanged D1–D6 exploratory data; no simulator tuning
 Protocol/config — FROZEN
 Implementation/execution — COMPLETED FOR SEEDS 101–120 ONLY
 Primary operator — time-integrated relative-occupancy graph and normalized Laplacian with spectrum/projector diagnostics
+Review finding — execution/integrity passed, but scientific interpretation is held because early window-distance indexing uses negative indices and D6 reformation uses the trivial condition `occupancy_edge > 0.0`
+Scientific interpretation — HOLD; v1.2 operator itself remains frozen
+
+TFL-UAS-DYNAMIC-001 v1.2.1:
+Status — DIAGNOSTIC CORRECTION AUTHORIZED
+Purpose — correct diagnostic indexing and D6 operator/pair reformation measurement only
+Scope — same frozen v1.2 operator, same 120 exploratory samples, no simulator/operator tuning
+Protocol/config — NOT YET FROZEN
+Implementation/execution — NOT AUTHORIZED UNTIL v1.2.1 FREEZE
 
 Current operational task:
-Review `experiments/TFL-UAS-DYNAMIC-001/v1.2/REVIEW_REQUIRED.md`; no extension or scientific decision is authorized.
+Create and freeze DYNAMIC-001 v1.2.1 diagnostic-correction protocol/config before implementation. Correct only valid window indexing and non-trivial D6 pair reformation/recovery measurement.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.
