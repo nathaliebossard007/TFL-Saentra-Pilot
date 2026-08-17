@@ -1,0 +1,32 @@
+# Research Backlog
+
+## P0
+
+- Import frozen TFL-UAS-001A predecessor.
+- Verify archive structure.
+- Verify available hashes.
+- Record frozen experiment lineage.
+- Mark predecessor immutable.
+
+## P1
+
+- Specify TFL-UAS-001B.
+- Build four-object apparent-group simulator.
+- Build four-object coordinated-group simulator.
+- Establish algorithm-visible / evaluator-only data separation.
+- Implement conventional organization baseline.
+- Implement relational model without spectral features.
+- Implement relational model with spectral features.
+- Run exploratory seeds.
+- Freeze feature definitions.
+- Run confirmatory seeds.
+- Run ablations.
+- Produce research report.
+
+## Future — only if scientifically justified
+
+- TFL-UAS-001C group-state transitions.
+- Group split.
+- Group merge.
+- Member departure.
+- degraded observation organization tests.
