@@ -9,17 +9,23 @@ TFL-UAS-001A:
 Track Association — NO-GO
 Frozen and verified.
 
-TFL-UAS-001B:
+TFL-UAS-001B v1.0:
 Protocol — FROZEN
 Exploratory phase — COMPLETED for seeds 101–120
-Implementation — EXPLORATORY ONLY
+Validation — FAILED anti-trivial-separation gate
+Scientific interpretation — NOT AUTHORIZED
+Historical review record — `REVIEW_REQUIRED.md`
+
+TFL-UAS-001B v1.1:
+Protocol revision — AUTHORIZED
+Purpose — marginal-matched exploratory redesign + proper supervised Model A boundary
+Implementation/execution — EXPLORATORY ONLY
 Confirmatory/Held-out execution — NOT AUTHORIZED
-Anti-trivial-separation gate — FAILED; REVIEW_REQUIRED.md created
 
 Next experiment:
 TFL-UAS-001B — Relational Organization Discrimination
 
 Current operational task:
-REVIEW_REQUIRED — decide whether a new 001B protocol version and simulator redesign are scientifically justified.
+Prepare, freeze and execute TFL-UAS-001B v1.1 exploratory redesign according to `tasks/current-task.md`.
 
-No confirmatory or held-out execution has started.
+Confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited pending explicit scientific review.
