@@ -165,3 +165,11 @@
 - Protocol SHA-256: `cfce052a7ac3b5c00f5f8a2033f4979b3a31d76453b665e365c955102791ad53`.
 - Configuration SHA-256: `c414016be1a4935777a588481f85b6f132f610a5a59333daa6c521f6efe3eb`.
 - No implementation or execution occurred in this freeze task; the next task is v1.2.1 exploratory implementation followed by REVIEW_REQUIRED.
+
+## 2026-08-17 — DYNAMIC-001 v1.2.1 exploratory correction stopped at review
+
+- Applied the frozen diagnostic-only correction to the unchanged 120 v1.2 raw operator states for seeds 101–120.
+- Invalid pre-window distances are now explicitly missing; D6 pair reformation uses the frozen reference-normalized 0.80 similarity rule and 5/6 pairs for 15 seconds.
+- The v1.2 operator, simulator, inputs, and prior outputs remain unchanged.
+- Raw corrected diagnostics were written before evaluator-only metadata; integrity and frozen-hash checks passed.
+- No scientific decision was made; automatic continuation stopped at `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/REVIEW_REQUIRED.md`.

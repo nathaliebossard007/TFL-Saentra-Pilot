@@ -54,14 +54,14 @@ Review finding — execution/integrity passed, but scientific interpretation is 
 Scientific interpretation — HOLD; v1.2 operator itself remains frozen
 
 TFL-UAS-DYNAMIC-001 v1.2.1:
-Status — DIAGNOSTIC CORRECTION PROTOCOL/CONFIG FROZEN
+Status — EXPLORATORY CORRECTION COMPLETED; REVIEW REQUIRED
 Purpose — correct diagnostic indexing and D6 operator/pair reformation measurement only
 Scope — same frozen v1.2 operator, same 120 exploratory samples, no simulator/operator tuning
 Protocol/config — FROZEN
-Implementation/execution — NOT YET STARTED; exploratory only after freeze
+Implementation/execution — COMPLETED FOR UNCHANGED SEEDS 101–120 ONLY
 
 Current operational task:
-Implement DYNAMIC-001 v1.2.1 diagnostic correction exactly as frozen on unchanged exploratory samples, then stop at REVIEW_REQUIRED.
+Review `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/REVIEW_REQUIRED.md`; no extension or scientific decision is authorized.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.

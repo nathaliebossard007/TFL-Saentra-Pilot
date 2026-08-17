@@ -66,10 +66,17 @@
 ## TFL-UAS-DYNAMIC-001 v1.2.1
 
 - [x] Freeze diagnostic-correction protocol/config and hashes.
-- [ ] Implement valid window indexing correction.
-- [ ] Implement non-trivial D6 pair reformation/recovery correction.
-- [ ] Run v1.2.1 exploratory correction only; stop at review.
+- [x] Implement valid window indexing correction.
+- [x] Implement non-trivial D6 pair reformation/recovery correction.
+- [x] Run v1.2.1 exploratory correction only; stop at review.
 - [ ] Do not execute classifier, benchmark, confirmatory, or held-out extensions.
+
+## 2026-08-17 — DYNAMIC-001 v1.2.1 exploratory correction stopped at review
+
+- Applied only the frozen diagnostic corrections to unchanged v1.2 raw operator states for seeds 101–120.
+- Wrote 120 corrected raw diagnostic files before evaluator-only metadata and produced 120 records.
+- Valid-window indexing, non-trivial D6 reformation, determinism, schema, ordering, and frozen-hash checks passed.
+- Created `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/REVIEW_REQUIRED.md`; no scientific decision or extension is authorized.
 
 ## 2026-08-17 — DYNAMIC-001 v1.2 exploratory run stopped at review
 

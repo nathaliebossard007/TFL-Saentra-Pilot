@@ -1,5 +1,17 @@
 # Current Task
 
+## REVIEW_REQUIRED — DYNAMIC-001 v1.2.1 exploratory correction
+
+Review `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/REVIEW_REQUIRED.md` and the
+corrected diagnostics before any further work. Do not execute extensions,
+benchmarks, classifiers, confirmatory seeds, held-out seeds, or make a
+scientific decision without explicit review authorization.
+
+The authorized correction run is complete: 120 unchanged v1.2 exploratory
+raw operator states were processed under the frozen v1.2.1 diagnostic rules.
+
+The prior implementation task follows for provenance:
+
 Implement **TFL-UAS-DYNAMIC-001 v1.2.1 diagnostic correction exactly as frozen** on the unchanged 120 exploratory samples, then stop at `REVIEW_REQUIRED`.
 
 The v1.2.1 protocol/config freeze is complete. Do not execute this task's
