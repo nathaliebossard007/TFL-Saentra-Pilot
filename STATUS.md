@@ -54,14 +54,23 @@ Review finding — execution/integrity passed, but scientific interpretation is 
 Scientific interpretation — HOLD; v1.2 operator itself remains frozen
 
 TFL-UAS-DYNAMIC-001 v1.2.1:
-Status — EXPLORATORY CORRECTION COMPLETED; REVIEW REQUIRED
+Status — EXPLORATORY CORRECTION COMPLETED; REVIEWED FOR INTEGRITY
 Purpose — correct diagnostic indexing and D6 operator/pair reformation measurement only
 Scope — same frozen v1.2 operator, same 120 exploratory samples, no simulator/operator tuning
 Protocol/config — FROZEN
 Implementation/execution — COMPLETED FOR UNCHANGED SEEDS 101–120 ONLY
+Scientific decision — NONE; predecessor remains a frozen measurement record
+
+TFL-RELSTATE-001 v1.0:
+Status — PROTOCOL FREEZE AUTHORIZED; NOT YET IMPLEMENTED
+Purpose — Relational Organizational State Equivalence
+Primary question — can collective organizational state persist despite large geometric, individual-trajectory, and local-motion changes?
+Core distinction — geometry/kinematics are observables; organizational state is defined through preregistered relational roles, dependencies, invariants and collective-state evolution
+Required contrast — high micro-variability with macro-coherence versus rigid coordination; geometrically plausible dependency violation versus true organizational preservation
+No classifier, learned representation, confirmatory, or held-out execution is authorized.
 
 Current operational task:
-Review `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/REVIEW_REQUIRED.md`; no extension or scientific decision is authorized.
+Freeze `TFL-RELSTATE-001 v1.0` protocol/config and stop before implementation.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.
