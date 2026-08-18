@@ -61,16 +61,27 @@ Protocol/config — FROZEN
 Implementation/execution — COMPLETED FOR UNCHANGED SEEDS 101–120 ONLY
 Scientific decision — NONE; predecessor remains a frozen measurement record
 
-TFL-RELSTATE-001 v1.0:
+TFL-ORG-SNAPSHOT-001:
+Status — WORKING RESEARCH ANCHOR
+Purpose — distinguish visible geometric realization from relational organizational state
+Toy proof-of-concept — cross-over observed between large geometric change with relational/operator invariance and small geometric change with relational/operator disruption
+Claim status — hypothesis-generating only; not yet reproduced on historical data
+
+TFL-ORG-RECHECK-001 v1.0:
 Status — PROTOCOL FREEZE AUTHORIZED; NOT YET IMPLEMENTED
-Purpose — Relational Organizational State Equivalence
-Primary question — can collective organizational state persist despite large geometric, individual-trajectory, and local-motion changes?
-Core distinction — geometry/kinematics are observables; organizational state is defined through preregistered relational roles, dependencies, invariants and collective-state evolution
-Required contrast — high micro-variability with macro-coherence versus rigid coordination; geometrically plausible dependency violation versus true organizational preservation
-No classifier, learned representation, confirmatory, or held-out execution is authorized.
+Purpose — limited historical-data G/R/P cross-over re-evaluation before any systematic TFL/RDL re-analysis
+Required bases — G geometry, R relation, P spectral/projector
+Dataset gate — exactly one eligible pre-existing historical dataset must be selected under frozen criteria before new cross-over metric inspection; if none exists, stop with NO ELIGIBLE HISTORICAL DATASET
+Interpretation gate — later human review may consider only GO_CANDIDATE_FOR_SYSTEMATIC_REANALYSIS or NO_GO_TOY_MODEL_ONLY
+No classifier, learned representation, synthetic replacement dataset, confirmatory, or held-out execution is authorized.
+
+TFL-RELSTATE-001:
+Status — DEFERRED CONCEPT
+Purpose — broader synthetic relational organizational-state equivalence experiment
+Do not freeze or implement until TFL-ORG-RECHECK-001 historical-data gate has been reviewed.
 
 Current operational task:
-Freeze `TFL-RELSTATE-001 v1.0` protocol/config and stop before implementation.
+Freeze `TFL-ORG-RECHECK-001 v1.0` protocol/config against exactly one eligible historical dataset, or stop if no eligible historical dataset exists. Do not execute the pilot in the same task.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.
