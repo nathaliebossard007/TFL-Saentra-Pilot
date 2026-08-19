@@ -1,5 +1,17 @@
 # Current Task
 
+## REVIEW_REQUIRED — TFL-ORG-RECHECK-001 v1.0 exploratory run
+
+Review `experiments/TFL-ORG-RECHECK-001/v1.0/REVIEW_REQUIRED.md` and the
+frozen G/R/P raw outputs before any further work. Do not assign either
+authorized outcome, extend the pilot, or start TFL-RELSTATE-001 without
+explicit review authorization.
+
+The authorized implementation is complete: 120 selected historical samples
+were processed and raw outputs were serialized before evaluator interpretation.
+
+The prior implementation task follows for provenance:
+
 ## AUTHORIZED — TFL-ORG-RECHECK-001 exploratory implementation
 
 Implement `TFL-ORG-RECHECK-001 v1.0` exactly as frozen on the selected

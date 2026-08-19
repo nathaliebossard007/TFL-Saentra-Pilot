@@ -76,8 +76,15 @@
 - [x] Inventory historical candidates and select exactly one eligible source.
 - [x] Freeze G/R/P bases, counterfactuals, metrics, and cross-over criterion.
 - [x] Freeze protocol/config and hashes.
-- [ ] Implement on selected historical data and serialize raw outputs.
-- [ ] Stop at REVIEW_REQUIRED before interpretation.
+- [x] Implement on selected historical data and serialize raw outputs.
+- [x] Stop at REVIEW_REQUIRED before interpretation.
+
+## 2026-08-19 — TFL-ORG-RECHECK-001 exploratory run stopped at review
+
+- Processed the selected historical DYNAMIC-001 algorithm-visible source: 120 samples, four tracks, 181 timestamps.
+- Serialized raw G/R/P outputs for registered Conditions A and B before evaluator interpretation.
+- No evaluator metadata, classifier, confirmatory/held-out execution, or scientific outcome was used.
+- Created `experiments/TFL-ORG-RECHECK-001/v1.0/REVIEW_REQUIRED.md`.
 
 ## 2026-08-17 — DYNAMIC-001 v1.2.1 exploratory correction stopped at review
 

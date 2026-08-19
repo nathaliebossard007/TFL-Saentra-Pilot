@@ -183,3 +183,11 @@
 - Protocol SHA-256: `f8fcc813d03a75f1fb59a931ca42b681e2a6c1c7af41a373dbed3142a2e33b08`.
 - Configuration SHA-256: `da5dc9092524748368a7943356ef31e78d2433fda64882cc76806c5dea8cd87b`.
 - No implementation, transformed output, metric inspection, or interpretation occurred in the freeze task.
+
+## 2026-08-19 — TFL-ORG-RECHECK-001 v1.0 exploratory run stopped at review
+
+- Applied the frozen G/R/P pilot to the selected historical DYNAMIC-001 algorithm-visible source: 120 samples and 181 timestamps per sample.
+- Serialized raw Condition A/B outputs before evaluator interpretation; source files remained unchanged.
+- No classifier, learned representation, confirmatory/held-out extension, or scientific outcome was assigned.
+- Source-count, schema, determinism, and frozen-protocol guards passed.
+- Automatic continuation stopped at `experiments/TFL-ORG-RECHECK-001/v1.0/REVIEW_REQUIRED.md`.

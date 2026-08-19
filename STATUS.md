@@ -68,11 +68,11 @@ Toy proof-of-concept — cross-over observed between large geometric change with
 Claim status — hypothesis-generating only; not yet reproduced on historical data
 
 TFL-ORG-RECHECK-001 v1.0:
-Status — PROTOCOL/CONFIG FROZEN; NOT YET IMPLEMENTED
+Status — EXPLORATORY RUN COMPLETED; REVIEW REQUIRED
 Purpose — limited historical-data G/R/P cross-over re-evaluation before any systematic TFL/RDL re-analysis
-Required bases — G geometry, R relation, P spectral/projector
+Required bases — G geometry, R relation, P spectral/projector; raw outputs serialized
 Dataset gate — exactly one eligible pre-existing historical dataset must be selected under frozen criteria before new cross-over metric inspection; if none exists, stop with NO ELIGIBLE HISTORICAL DATASET
-Interpretation gate — later human review may consider only GO_CANDIDATE_FOR_SYSTEMATIC_REANALYSIS or NO_GO_TOY_MODEL_ONLY
+Interpretation gate — later human review may consider only GO_CANDIDATE_FOR_SYSTEMATIC_REANALYSIS or NO_GO_TOY_MODEL_ONLY; no outcome assigned
 No classifier, learned representation, synthetic replacement dataset, confirmatory, or held-out execution is authorized.
 
 TFL-RELSTATE-001:
@@ -81,7 +81,7 @@ Purpose — broader synthetic relational organizational-state equivalence experi
 Do not freeze or implement until TFL-ORG-RECHECK-001 historical-data gate has been reviewed.
 
 Current operational task:
-Implement `TFL-ORG-RECHECK-001 v1.0` exactly as frozen on the selected historical dataset, serialize transformed/raw G/R/P outputs before evaluator interpretation, then stop at REVIEW_REQUIRED.
+Review `experiments/TFL-ORG-RECHECK-001/v1.0/REVIEW_REQUIRED.md`; no interpretation or extension is authorized.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.
