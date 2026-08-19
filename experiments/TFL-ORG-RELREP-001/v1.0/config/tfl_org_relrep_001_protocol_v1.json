@@ -1,0 +1,16 @@
+{
+  "experiment": "TFL-ORG-RELREP-001",
+  "protocol_version": "1.0",
+  "status": "frozen_protocol_only",
+  "source": "experiments/TFL-UAS-DYNAMIC-001/data/algorithm_visible",
+  "sample_count_expected": 120,
+  "track_count": 4,
+  "representations": {"G": "pair distances, relative speeds, temporal differences", "R_id": "top-two-incident canonical graph", "R_wt": "frozen normalized distance/direction weight", "R_t": "5/15/30 second canonical relation transitions", "P": "weighted normalized Laplacian summaries"},
+  "transform_A": {"rotation_z_degrees": 37.0, "center_scale": 1.8},
+  "transform_B": {"perturbation": "lexicographically first valid degree-preserving 2-switch", "preserve_geometry": true},
+  "canonicalization": {"permutations": 24, "weight_tolerance": 1e-9, "isomorphism_separate_from_edge_difference": true},
+  "projector": {"rank": 2, "gap_min": 1e-6, "distance": "frobenius/sqrt(4)", "near_degenerate": "missing"},
+  "classifier": null,
+  "learned_parameters": false,
+  "execution_authorized": false
+}

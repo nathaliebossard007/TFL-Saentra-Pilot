@@ -1,5 +1,20 @@
 # Current Task
 
+## AUTHORIZED — TFL-ORG-RELREP-001 exploratory implementation
+
+Implement `TFL-ORG-RELREP-001 v1.0` exactly as frozen, serialize raw G,
+R_id, R_wt, R_t, and P representations before evaluator interpretation, then
+stop at `REVIEW_REQUIRED`. Preserve RECHECK v1.0 and all predecessor records
+unchanged.
+
+Frozen files:
+
+- `experiments/TFL-ORG-RELREP-001/v1.0/TFL-ORG-RELREP-001_PROTOCOL_v1.0.md`
+- `experiments/TFL-ORG-RELREP-001/v1.0/config/tfl_org_relrep_001_protocol_v1.json`
+- `experiments/TFL-ORG-RELREP-001/v1.0/PROTOCOL_FREEZE.md`
+
+The prior protocol-freeze task follows for provenance.
+
 ## AUTHORIZED — TFL-ORG-RELREP-001 protocol freeze only
 
 Use `docs/TFL-ORG-CONSOLIDATED-ANCHOR-001.md` as the canonical research anchor.

@@ -191,3 +191,12 @@
 - No classifier, learned representation, confirmatory/held-out extension, or scientific outcome was assigned.
 - Source-count, schema, determinism, and frozen-protocol guards passed.
 - Automatic continuation stopped at `experiments/TFL-ORG-RECHECK-001/v1.0/REVIEW_REQUIRED.md`.
+
+## 2026-08-19 — TFL-ORG-RELREP-001 v1.0 protocol frozen
+
+- Preserved `TFL-ORG-RECHECK-001 v1.0` unchanged as `NO_GO_TOY_MODEL_ONLY` for its preregistered cross-over criterion.
+- Selected the same frozen DYNAMIC-001 algorithm-visible source: 120 samples with four stable tracks; evaluator-only data remains excluded.
+- Froze parallel G, explicit R_id, source-supported R_wt, temporal R_t, and lossy P representations, including canonicalization, isomorphism/cospectrality distinctions, A/B transformations, and information-loss diagnostics.
+- Protocol SHA-256: `d0fe34637d1b7343798983023ab02c2e5c56d8ba3a631ad5d5c27e745cd42a5c`.
+- Configuration SHA-256: `5fa3ccaf95498636928e3c58a3a6807be420591a6b54687fca441aad5ab8b6fd`.
+- No implementation or execution occurred in this freeze task.

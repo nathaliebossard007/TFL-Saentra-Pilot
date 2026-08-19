@@ -80,8 +80,14 @@ Status — DEFERRED CONCEPT
 Purpose — broader synthetic relational organizational-state equivalence experiment
 Do not freeze or implement until TFL-ORG-RECHECK-001 historical-data gate has been reviewed.
 
+TFL-ORG-RELREP-001 v1.0:
+Status — PROTOCOL/CONFIG FROZEN; NOT YET IMPLEMENTED
+Purpose — minimal explicit relational representation and information-retention test
+Scope — reuse frozen DYNAMIC-001 algorithm-visible source; preserve RECHECK NO-GO unchanged
+Interpretation — not authorized before exploratory execution and review
+
 Current operational task:
-Review `experiments/TFL-ORG-RECHECK-001/v1.0/REVIEW_REQUIRED.md`; no interpretation or extension is authorized.
+Implement `TFL-ORG-RELREP-001 v1.0` exactly as frozen, serialize raw parallel representations before evaluator interpretation, then stop at REVIEW_REQUIRED.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.
