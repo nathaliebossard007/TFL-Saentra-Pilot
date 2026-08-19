@@ -81,13 +81,13 @@ Purpose — broader synthetic relational organizational-state equivalence experi
 Do not freeze or implement until TFL-ORG-RECHECK-001 historical-data gate has been reviewed.
 
 TFL-ORG-RELREP-001 v1.0:
-Status — PROTOCOL/CONFIG FROZEN; NOT YET IMPLEMENTED
+Status — EXPLORATORY RUN COMPLETED; REVIEW REQUIRED
 Purpose — minimal explicit relational representation and information-retention test
 Scope — reuse frozen DYNAMIC-001 algorithm-visible source; preserve RECHECK NO-GO unchanged
-Interpretation — not authorized before exploratory execution and review
+Interpretation — not authorized; review gate active
 
 Current operational task:
-Implement `TFL-ORG-RELREP-001 v1.0` exactly as frozen, serialize raw parallel representations before evaluator interpretation, then stop at REVIEW_REQUIRED.
+Review `experiments/TFL-ORG-RELREP-001/v1.0/REVIEW_REQUIRED.md`; no representation outcome or extension is authorized.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.

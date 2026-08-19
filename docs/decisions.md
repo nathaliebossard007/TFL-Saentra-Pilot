@@ -200,3 +200,11 @@
 - Protocol SHA-256: `d0fe34637d1b7343798983023ab02c2e5c56d8ba3a631ad5d5c27e745cd42a5c`.
 - Configuration SHA-256: `5fa3ccaf95498636928e3c58a3a6807be420591a6b54687fca441aad5ab8b6fd`.
 - No implementation or execution occurred in this freeze task.
+
+## 2026-08-19 — TFL-ORG-RELREP-001 exploratory run stopped at review
+
+- Applied the frozen parallel G/R_id/R_wt/R_t/P representations to the unchanged 120-sample DYNAMIC-001 algorithm-visible source.
+- Serialized raw outputs before evaluator interpretation; no predecessor or source data was modified.
+- No representation outcome, classifier, learned representation, confirmatory, or held-out extension was assigned.
+- Source-count, schema, determinism, and frozen-protocol guards passed.
+- Automatic continuation stopped at `experiments/TFL-ORG-RELREP-001/v1.0/REVIEW_REQUIRED.md`.

@@ -1,5 +1,18 @@
 # Current Task
 
+## REVIEW_REQUIRED — TFL-ORG-RELREP-001 v1.0 exploratory run
+
+Review `experiments/TFL-ORG-RELREP-001/v1.0/REVIEW_REQUIRED.md` and the
+parallel raw representations before any further work. Do not assign
+`RELATIONAL_REPRESENTATION_CANDIDATE` or `REPRESENTATION_INSUFFICIENT`, and do
+not extend the experiment without explicit review authorization.
+
+The authorized implementation is complete: 120 unchanged historical samples
+were processed and raw G/R_id/R_wt/R_t/P outputs were serialized before
+evaluator interpretation.
+
+The prior implementation task follows for provenance.
+
 ## AUTHORIZED — TFL-ORG-RELREP-001 exploratory implementation
 
 Implement `TFL-ORG-RELREP-001 v1.0` exactly as frozen, serialize raw G,

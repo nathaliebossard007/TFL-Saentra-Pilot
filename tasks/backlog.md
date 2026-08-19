@@ -85,8 +85,15 @@
 - [x] Freeze G, R_id, R_wt, R_t, and P definitions.
 - [x] Freeze canonicalization, transformations, information-loss diagnostics, and guards.
 - [x] Freeze protocol/config and hashes.
-- [ ] Implement parallel representations and serialize raw outputs.
-- [ ] Stop at REVIEW_REQUIRED before interpretation.
+- [x] Implement parallel representations and serialize raw outputs.
+- [x] Stop at REVIEW_REQUIRED before interpretation.
+
+## 2026-08-19 — TFL-ORG-RELREP-001 exploratory run stopped at review
+
+- Processed the unchanged selected DYNAMIC-001 algorithm-visible source: 120 samples, four tracks, 181 timestamps.
+- Serialized raw G, R_id, R_wt, R_t, and P representations before evaluator interpretation.
+- No evaluator metadata, classifier, learned representation, confirmatory/held-out execution, or outcome assignment occurred.
+- Created `experiments/TFL-ORG-RELREP-001/v1.0/REVIEW_REQUIRED.md`.
 
 ## 2026-08-19 — TFL-ORG-RECHECK-001 exploratory run stopped at review
 
