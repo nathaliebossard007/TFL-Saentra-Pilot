@@ -201,6 +201,15 @@
 - Configuration SHA-256: `5fa3ccaf95498636928e3c58a3a6807be420591a6b54687fca441aad5ab8b6fd`.
 - No implementation or execution occurred in this freeze task.
 
+## 2026-08-19 — TFL-ORG-SYM-001 v1.0 protocol frozen
+
+- Preserved RELREP v1.0 unchanged as `REPRESENTATION_INSUFFICIENT`.
+- Reused the frozen DYNAMIC-001 algorithm-visible source: 120 samples with stable track identity; evaluator-only fields remain excluded.
+- Froze separate R_labeled/R_struct and named P layers, explicitly unsupported R_role handling, state-dependent G_allow stabilizer criteria, permutation classes, closure/groupoid handling, and information-loss maps.
+- Protocol SHA-256: `c419bbd4cd0c092e154c6d80ab8f43ebf536902393ffb4df1f15b960f0bd6469`.
+- Configuration SHA-256: `727e2e218ed0f388faea0f57e111a2c0995276d6c7c26b1cf4af95a3b221b8cc`.
+- No implementation or execution occurred in this freeze task.
+
 ## 2026-08-19 — TFL-ORG-RELREP-001 exploratory run stopped at review
 
 - Applied the frozen parallel G/R_id/R_wt/R_t/P representations to the unchanged 120-sample DYNAMIC-001 algorithm-visible source.

@@ -1,5 +1,20 @@
 # Current Task
 
+## AUTHORIZED — TFL-ORG-SYM-001 exploratory implementation
+
+Implement `TFL-ORG-SYM-001 v1.0` exactly as frozen, serialize labeled,
+structural, and named operator-layer transformation outputs before
+interpretation, then stop at `REVIEW_REQUIRED`. Preserve RELREP v1.0 and all
+predecessor records unchanged.
+
+Frozen files:
+
+- `experiments/TFL-ORG-SYM-001/v1.0/TFL-ORG-SYM-001_PROTOCOL_v1.0.md`
+- `experiments/TFL-ORG-SYM-001/v1.0/config/tfl_org_sym_001_protocol_v1.json`
+- `experiments/TFL-ORG-SYM-001/v1.0/PROTOCOL_FREEZE.md`
+
+The prior protocol-freeze task follows for provenance.
+
 ## AUTHORIZED — TFL-ORG-SYM-001 protocol freeze only
 
 Use these records as the governing research basis:

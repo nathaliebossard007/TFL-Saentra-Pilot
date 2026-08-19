@@ -86,8 +86,14 @@ Purpose — minimal explicit relational representation and information-retention
 Scope — reuse frozen DYNAMIC-001 algorithm-visible source; preserve RECHECK NO-GO unchanged
 Interpretation — not authorized; review gate active
 
+TFL-ORG-SYM-001 v1.0:
+Status — PROTOCOL/CONFIG FROZEN; NOT YET IMPLEMENTED
+Purpose — determine admissible organizational symmetries before quotienting
+Scope — reuse frozen DYNAMIC-001 algorithm-visible source; preserve RELREP insufficiency unchanged
+Interpretation — not authorized before exploratory execution and review
+
 Current operational task:
-Review `experiments/TFL-ORG-RELREP-001/v1.0/REVIEW_REQUIRED.md`; no representation outcome or extension is authorized.
+Implement `TFL-ORG-SYM-001 v1.0` exactly as frozen, serialize labeled/structural outputs before interpretation, then stop at REVIEW_REQUIRED.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.

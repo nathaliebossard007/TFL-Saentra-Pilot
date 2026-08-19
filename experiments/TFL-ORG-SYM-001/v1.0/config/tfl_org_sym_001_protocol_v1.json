@@ -1,0 +1,17 @@
+{
+  "experiment": "TFL-ORG-SYM-001",
+  "protocol_version": "1.0",
+  "status": "frozen_protocol_only",
+  "source": "experiments/TFL-UAS-DYNAMIC-001/data/algorithm_visible",
+  "sample_count_expected": 120,
+  "track_count": 4,
+  "layers": {"R_labeled": "stable endpoint identity and full weighted matrix", "R_struct": "state-dependent G_allow(X) structural relation", "R_role": null, "P_labeled": "named downstream Laplacian diagnostics", "P_struct": "named downstream structural diagnostics"},
+  "windows_s": [5, 15, 30],
+  "permutations": 24,
+  "g_allow": {"type": "state_dependent_stabilizer_candidate", "tolerance": 1e-9, "requires": ["weighted_temporal_sequence", "geometry_kinematics_sequence", "transition_encoding"], "closure_test": true, "closure_failure": "groupoid_or_pseudogroup_record"},
+  "projector": {"rank": 2, "gap_min": 1e-6, "near_degenerate": "missing"},
+  "role_layer": {"supported": false, "reason": "no independent algorithm-visible role partition", "invent_roles": false},
+  "classifier": null,
+  "learned_parameters": false,
+  "execution_authorized": false
+}

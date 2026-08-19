@@ -181,3 +181,13 @@ if ([string]::IsNullOrWhiteSpace($orgRelrepProtocolExpected) -or [string]::IsNul
 if ((Get-FileHash $orgRelrepProtocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $orgRelrepProtocolExpected) { throw "TFL-ORG-RELREP-001 protocol hash mismatch." }
 if ((Get-FileHash $orgRelrepConfig -Algorithm SHA256).Hash.ToLowerInvariant() -ne $orgRelrepConfigExpected) { throw "TFL-ORG-RELREP-001 configuration hash mismatch." }
 Write-Output "TFL-ORG-RELREP-001 protocol freeze hash check passed."
+
+$orgSymProtocol = Join-Path $PSScriptRoot "..\experiments\TFL-ORG-SYM-001\v1.0\TFL-ORG-SYM-001_PROTOCOL_v1.0.md"
+$orgSymConfig = Join-Path $PSScriptRoot "..\experiments\TFL-ORG-SYM-001\v1.0\config\tfl_org_sym_001_protocol_v1.json"
+$orgSymFreeze = Get-Content -Raw (Join-Path $PSScriptRoot "..\experiments\TFL-ORG-SYM-001\v1.0\PROTOCOL_FREEZE.md")
+$orgSymProtocolExpected = ([regex]::Match($orgSymFreeze, 'Protocol SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+$orgSymConfigExpected = ([regex]::Match($orgSymFreeze, 'Config SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+if ([string]::IsNullOrWhiteSpace($orgSymProtocolExpected) -or [string]::IsNullOrWhiteSpace($orgSymConfigExpected)) { throw "TFL-ORG-SYM-001 freeze hashes are missing or malformed." }
+if ((Get-FileHash $orgSymProtocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $orgSymProtocolExpected) { throw "TFL-ORG-SYM-001 protocol hash mismatch." }
+if ((Get-FileHash $orgSymConfig -Algorithm SHA256).Hash.ToLowerInvariant() -ne $orgSymConfigExpected) { throw "TFL-ORG-SYM-001 configuration hash mismatch." }
+Write-Output "TFL-ORG-SYM-001 protocol freeze hash check passed."

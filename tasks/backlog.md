@@ -79,6 +79,15 @@
 - [x] Implement on selected historical data and serialize raw outputs.
 - [x] Stop at REVIEW_REQUIRED before interpretation.
 
+## TFL-ORG-SYM-001 v1.0
+
+- [x] Freeze selected source and provenance.
+- [x] Freeze R_labeled, R_struct, unsupported R_role handling, and P layers.
+- [x] Freeze G_allow, permutation classes, closure, and information-loss diagnostics.
+- [x] Freeze protocol/config and hashes.
+- [ ] Implement labeled/structural symmetry outputs.
+- [ ] Stop at REVIEW_REQUIRED before interpretation.
+
 ## TFL-ORG-RELREP-001 v1.0
 
 - [x] Freeze dataset choice and provenance.
