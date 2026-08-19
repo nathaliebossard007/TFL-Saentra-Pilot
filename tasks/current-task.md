@@ -1,164 +1,126 @@
 # Current Task
 
-## REVIEW_REQUIRED — TFL-ORG-RECHECK-001 v1.0 exploratory run
+## AUTHORIZED — TFL-ORG-RELREP-001 protocol freeze only
 
-Review `experiments/TFL-ORG-RECHECK-001/v1.0/REVIEW_REQUIRED.md` and the
-frozen G/R/P raw outputs before any further work. Do not assign either
-authorized outcome, extend the pilot, or start TFL-RELSTATE-001 without
-explicit review authorization.
+Use `docs/TFL-ORG-CONSOLIDATED-ANCHOR-001.md` as the canonical research anchor.
+Preserve `TFL-ORG-RECHECK-001 v1.0` unchanged as `NO_GO_TOY_MODEL_ONLY` for its preregistered cross-over criterion.
+Do **not** tune or replace the failed v1.0 Laplacian merely to make Condition B pass.
 
-The authorized implementation is complete: 120 selected historical samples
-were processed and raw outputs were serialized before evaluator interpretation.
+Open a narrow follow-up:
 
-The prior implementation task follows for provenance:
-
-## AUTHORIZED — TFL-ORG-RECHECK-001 exploratory implementation
-
-Implement `TFL-ORG-RECHECK-001 v1.0` exactly as frozen on the selected
-historical DYNAMIC-001 algorithm-visible dataset. Serialize transformed/raw
-G/R/P outputs before evaluator interpretation, then stop at `REVIEW_REQUIRED`.
-
-Frozen files:
-
-- `experiments/TFL-ORG-RECHECK-001/v1.0/TFL-ORG-RECHECK-001_PROTOCOL_v1.0.md`
-- `experiments/TFL-ORG-RECHECK-001/v1.0/config/tfl_org_recheck_001_protocol_v1.json`
-- `experiments/TFL-ORG-RECHECK-001/v1.0/PROTOCOL_FREEZE.md`
-
-The prior protocol-freeze task follows for provenance.
-
-## AUTHORIZED — TFL-ORG-RECHECK-001 protocol freeze only
-
-Use `docs/TFL-ORG-SNAPSHOT-001.md` as the working research anchor.
-
-Do **not** yet implement the broader synthetic `TFL-RELSTATE-001` experiment. Preserve that concept as deferred follow-up only.
-
-Open a narrow re-evaluation pilot:
-
-**TFL-ORG-RECHECK-001 — Geometry / Relation / Projector Cross-over on Existing Data**
+**TFL-ORG-RELREP-001 — Minimal Relational Representation and Information-Retention Test**
 
 ## Scientific purpose
 
-Test whether the toy-model cross-over in `TFL-ORG-SNAPSHOT-001` is reproducible on one pre-existing historical TFL/RDL dataset before authorizing any systematic re-analysis.
+Determine the minimum non-learned representation that preserves organization-relevant coupling identity and temporal dependency information that can be lost by degree sequence or coarse Laplacian spectral summaries.
 
 Primary question:
 
-**Which observation basis remains stable under organization-preserving geometric change, and which basis detects organization-breaking relational change when geometry remains similar?**
+**Which representation preserves `who is coupled to whom`, how those couplings evolve, and which transformations leave the same relational organization unchanged?**
 
-Parallel bases:
+## Required parallel representations
 
-- `G` — geometry/kinematic observables
-- `R` — explicit relational observables
-- `P` — spectral/eigenspace/projector observables derived from the registered relational graph/operator
+Freeze at least four separate views; do not collapse them into one score:
 
-No basis may be collapsed into a learned score.
+- `G` — geometry / kinematics, retained only as the realization baseline;
+- `R_id` — explicit node/edge coupling identity with canonical label-handling;
+- `R_wt` — independently justified relation weights / dependency strengths where supported by source data;
+- `R_t` — temporal evolution of relation identity/weights over preregistered windows;
+- `P` — operator summaries derived from the explicit relation state, treated as lossy diagnostics rather than the organizational state itself.
 
-## Dataset selection gate
+If the selected data cannot independently justify `R_wt`, record it as unsupported rather than inventing weights.
 
-Before any implementation or metric inspection:
+## Dataset gate
 
-1. Inventory historical datasets already present in the repository or frozen imported artifacts.
-2. Select exactly one eligible pre-existing dataset using preregistered criteria only:
-   - generated/collected before `TFL-ORG-SNAPSHOT-001`;
-   - contains sufficient algorithm-visible per-object/per-node temporal or relational data to construct G/R/P without scenario-label leakage;
-   - was not generated specifically for this new hypothesis;
-   - frozen/raw source remains unchanged.
-3. Record candidate datasets, exclusion reasons, and the selected dataset in the protocol **before looking at new G/R/P cross-over results**.
-4. If no eligible dataset exists, stop at `REVIEW_REQUIRED` with `NO ELIGIBLE HISTORICAL DATASET`; do not synthesize a replacement in this task.
+Before implementation or result inspection:
 
-## Required paired perturbation logic
+1. Inventory pre-existing eligible historical data already frozen in the repository.
+2. Prefer reuse of the same DYNAMIC-001 algorithm-visible track source if it supports the required representation without evaluator leakage; otherwise document why another frozen historical source is necessary.
+3. No new simulator or synthetic replacement dataset is authorized in this task.
+4. Record algorithm-visible versus evaluator-only fields before metric inspection.
 
-The protocol must preregister a deterministic, label-free way to form or identify two counterfactual conditions from the selected historical data without altering its source record:
+## Representation requirements
 
-### A — geometry-breaking / organization-preserving
+The protocol must freeze, before execution:
 
-Apply only transformations that strongly change geometric realization while preserving the registered relational-role/dependency structure by construction or by a preregistered invariance rule.
+1. canonical node identity and permutation handling;
+2. explicit edge/dependency representation;
+3. relation-weight definition, normalization, and missing-data rule;
+4. temporal windowing and transition representation;
+5. admissible organization-preserving transformations;
+6. at least one organization-breaking relational perturbation that does not rely on evaluator labels;
+7. comparison metrics for each representation separately;
+8. operator construction(s), if any, only after the explicit relation representation is fixed;
+9. degeneracy/cospectrality handling;
+10. trivial-marginal and information-loss checks.
 
-Examples may include translation, rotation, admissible scale/shape transform, coordinate-frame transform, or node-position remapping **only if** the protocol proves which relational invariants are preserved.
+## Mandatory information-loss test
 
-### B — geometry-preserving / organization-breaking
+The protocol must explicitly test whether two states can satisfy
 
-Apply a preregistered relational perturbation that minimally changes raw geometry but changes `who is coupled to whom / in what relational role`.
+`P(X1) = P(X2)` (or be indistinguishable under the registered operator summary)
 
-A degree-preserving graph 2-switch is admissible only if it can be derived from the selected dataset's registered relational graph without using evaluator labels and if graph validity constraints are frozen before execution.
+while
 
-The perturbations are counterfactual analysis transforms; they must not overwrite historical raw data.
+`R_id(X1) != R_id(X2)`.
 
-## Required measurements
+Such a case is not an implementation failure. It is evidence that the registered `P` representation is many-to-one with respect to explicit coupling identity.
 
-Freeze deterministic metrics before implementation.
+The protocol must distinguish:
 
-### G — Geometry
+- relational difference;
+- graph isomorphism / mere relabeling;
+- degree-sequence equivalence;
+- spectral/cospectral equivalence;
+- temporal-equivalence or temporal divergence.
 
-At minimum:
-- mean/median pair-distance change;
-- pair-distance correlation;
-- optional registered trajectory/vector distances if available in the selected dataset.
+## Transformation logic
 
-### R — Relation
+At minimum preregister:
 
-At minimum:
-- edge/neighbor Jaccard or equivalent registered relational overlap;
-- role/dependency preservation where the historical data supports such a definition;
-- no invented semantic roles unsupported by the source dataset.
+### A — realization change / relational organization preserved
 
-### P — Operator / projector
+Use transformations whose invariance properties are proved from the frozen representation definition. Geometry may change strongly, but `R_id/R_wt/R_t` should remain equivalent under the registered canonicalization.
 
-At minimum where mathematically defined:
-- normalized Laplacian construction and zero-degree rule;
-- spectrum distance;
-- algebraic-connectivity change (`lambda_2`) where applicable;
-- low-mode projector/subspace distance using a preregistered rank-selection rule;
-- sign, permutation, degeneracy and near-degeneracy handling.
+### B — relational organization change / realization preserved
 
-Single eigenvectors must not be treated as invariant organizational identifiers.
-
-## Cross-over criterion to freeze
-
-The protocol must define a non-learned qualitative/quantitative cross-over criterion before execution.
-
-Desired pattern, stated as a hypothesis rather than assumed outcome:
-
-- Condition A: `G` changes strongly while `R/P` remain comparatively stable.
-- Condition B: `G` remains comparatively stable while `R/P` change substantially.
-
-The criterion must compare relative behavior across G/R/P and must not be tuned after viewing results.
+Change explicit coupling/dependency structure while leaving raw geometry unchanged or nearly unchanged. Do not require the operator summary to change; instead measure whether and where information is lost between `R_*` and `P`.
 
 ## Interpretation gate
 
-Only two high-level outcomes are authorized after review:
+The exploratory run may later support only a human-reviewed statement about representation adequacy, for example:
 
-- `GO_CANDIDATE_FOR_SYSTEMATIC_REANALYSIS` — the preregistered cross-over is reproduced on the eligible historical dataset and survives trivial-marginal checks.
-- `NO_GO_TOY_MODEL_ONLY` — the cross-over is not reproduced or depends on a construction unavailable in the historical data.
+- `RELATIONAL_REPRESENTATION_CANDIDATE` — explicit relation identity/temporal representation survives invariance controls and distinguishes registered relational changes without trivial marginal leakage;
+- `REPRESENTATION_INSUFFICIENT` — the proposed explicit representation itself fails to distinguish the registered organizational changes or depends on unsupported semantics.
 
-Automatic execution must not assign either outcome. It must stop at `REVIEW_REQUIRED`.
+Do not assign either outcome automatically.
 
 ## Protocol-freeze task only
 
 For this task:
 
-1. Create `experiments/TFL-ORG-RECHECK-001/v1.0/`.
-2. Inventory historical candidate datasets and freeze inclusion/exclusion criteria.
-3. Select exactly one eligible dataset before new metric inspection, or stop if none exists.
-4. Write `TFL-ORG-RECHECK-001_PROTOCOL_v1.0.md` and machine-readable config.
-5. Freeze exact G/R/P definitions, perturbations, invariances, projector-rank rule, degeneracy handling, cross-over criterion, and trivial-marginal checks.
-6. Document algorithm-visible versus evaluator-only information.
-7. Create `PROTOCOL_FREEZE.md` with hashes and provenance.
-8. Add guards protecting the selected historical raw source and protocol/config.
-9. Update `STATUS.md`, `docs/decisions.md`, and `tasks/backlog.md`.
-10. Do **not** implement or execute in the same task.
+1. Create `experiments/TFL-ORG-RELREP-001/v1.0/`.
+2. Freeze dataset choice and provenance before new result inspection.
+3. Write protocol and machine-readable config.
+4. Freeze exact `G`, `R_id`, `R_wt`, `R_t`, and `P` definitions.
+5. Freeze canonicalization/permutation/isomorphism rules.
+6. Freeze A/B transformations and invariance proofs.
+7. Freeze information-loss/cospectrality diagnostics.
+8. Freeze trivial-marginal and leakage checks.
+9. Create `PROTOCOL_FREEZE.md` with hashes.
+10. Add guards protecting predecessor data and the new protocol/config.
+11. Update `STATUS.md`, `docs/decisions.md`, and `tasks/backlog.md`.
+12. Do **not** implement or execute in the same task.
 
-After a successful freeze, set the next task to:
-
-**Implement TFL-ORG-RECHECK-001 v1.0 exactly as frozen on the selected historical dataset, serialize transformed/raw G/R/P outputs before evaluator interpretation, then stop at REVIEW_REQUIRED.**
+After a successful freeze, set the next task to implement exactly as frozen, serialize raw parallel representations before evaluator interpretation, then stop at `REVIEW_REQUIRED`.
 
 ## Scientific gates
 
-- Preserve all frozen predecessor results unchanged.
-- No full TFL/RDL re-analysis yet.
-- No new simulator or synthetic replacement dataset in this pilot.
-- No hostile/attack semantics are required.
 - No classifier, neural model, learned representation, learned threshold, or post-hoc tuning.
-- No confirmatory/held-out extension.
-- No physical quantum claim; Hilbert/operator language is mathematical analogy/state-space language only.
+- No new simulator or synthetic replacement dataset.
+- No hostile/attack semantics are needed.
+- Preserve all predecessor records unchanged.
+- `TFL-RELSTATE-001` remains deferred until this representation question is reviewed.
+- Operator success is not required; operator information loss is a valid result.
 - Negative/null outcome is valid.
-- Stop on missing eligible dataset, ambiguous relational definition, leakage, protocol change requirement, or completion of the exploratory run.
+- Stop on ambiguous representation semantics, unsupported weights, leakage, protocol-change requirement, or missing eligible data.
