@@ -173,3 +173,13 @@
 - The v1.2 operator, simulator, inputs, and prior outputs remain unchanged.
 - Raw corrected diagnostics were written before evaluator-only metadata; integrity and frozen-hash checks passed.
 - No scientific decision was made; automatic continuation stopped at `experiments/TFL-UAS-DYNAMIC-001/v1.2.1/REVIEW_REQUIRED.md`.
+
+## 2026-08-19 — TFL-ORG-RECHECK-001 v1.0 protocol frozen
+
+- Inventoried pre-existing historical sources before any new G/R/P metric inspection.
+- Selected the frozen algorithm-visible DYNAMIC-001 track data: 120 opaque samples with four stable per-object temporal tracks.
+- Excluded TFL-UAS-001A sensor observations for lacking stable per-object nodes and excluded evaluator-only predecessor data from algorithm use.
+- Froze geometry, relation, normalized-Laplacian/projector bases, scale/rotation and degree-preserving 2-switch counterfactuals, trivial-marginal checks, and the non-learned cross-over criterion.
+- Protocol SHA-256: `f8fcc813d03a75f1fb59a931ca42b681e2a6c1c7af41a373dbed3142a2e33b08`.
+- Configuration SHA-256: `da5dc9092524748368a7943356ef31e78d2433fda64882cc76806c5dea8cd87b`.
+- No implementation, transformed output, metric inspection, or interpretation occurred in the freeze task.

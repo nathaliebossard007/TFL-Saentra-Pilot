@@ -154,3 +154,20 @@ if ([string]::IsNullOrWhiteSpace($dynamicV121ProtocolExpected) -or [string]::IsN
 if ((Get-FileHash $dynamicV121Protocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV121ProtocolExpected) { throw "DYNAMIC-001 v1.2.1 protocol hash mismatch." }
 if ((Get-FileHash $dynamicV121Config -Algorithm SHA256).Hash.ToLowerInvariant() -ne $dynamicV121ConfigExpected) { throw "DYNAMIC-001 v1.2.1 configuration hash mismatch." }
 Write-Output "DYNAMIC-001 v1.2.1 protocol freeze hash check passed."
+
+$orgRecheckProtocol = Join-Path $PSScriptRoot "..\experiments\TFL-ORG-RECHECK-001\v1.0\TFL-ORG-RECHECK-001_PROTOCOL_v1.0.md"
+$orgRecheckConfig = Join-Path $PSScriptRoot "..\experiments\TFL-ORG-RECHECK-001\v1.0\config\tfl_org_recheck_001_protocol_v1.json"
+$orgRecheckFreeze = Get-Content -Raw (Join-Path $PSScriptRoot "..\experiments\TFL-ORG-RECHECK-001\v1.0\PROTOCOL_FREEZE.md")
+$orgRecheckProtocolExpected = ([regex]::Match($orgRecheckFreeze, 'Protocol SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+$orgRecheckConfigExpected = ([regex]::Match($orgRecheckFreeze, 'Config SHA-256: `([0-9a-fA-F]{64})`')).Groups[1].Value.ToLowerInvariant()
+if ([string]::IsNullOrWhiteSpace($orgRecheckProtocolExpected) -or [string]::IsNullOrWhiteSpace($orgRecheckConfigExpected)) { throw "TFL-ORG-RECHECK-001 freeze hashes are missing or malformed." }
+if ((Get-FileHash $orgRecheckProtocol -Algorithm SHA256).Hash.ToLowerInvariant() -ne $orgRecheckProtocolExpected) { throw "TFL-ORG-RECHECK-001 protocol hash mismatch." }
+if ((Get-FileHash $orgRecheckConfig -Algorithm SHA256).Hash.ToLowerInvariant() -ne $orgRecheckConfigExpected) { throw "TFL-ORG-RECHECK-001 configuration hash mismatch." }
+Write-Output "TFL-ORG-RECHECK-001 protocol freeze hash check passed."
+
+$orgSource = Join-Path $PSScriptRoot "..\experiments\TFL-UAS-DYNAMIC-001\data\algorithm_visible"
+$orgSourceFiles = @(Get-ChildItem -LiteralPath $orgSource -Filter "sample_*.json" -File)
+if ($orgSourceFiles.Count -ne 120) { throw "TFL-ORG-RECHECK-001 selected historical source count changed: expected 120, got $($orgSourceFiles.Count)." }
+$orgSourceSample = Get-Content -Raw (Join-Path $orgSource "sample_0001.json") | ConvertFrom-Json
+if ($null -eq $orgSourceSample.track_states -or @($orgSourceSample.PSObject.Properties).Count -ne 1) { throw "TFL-ORG-RECHECK-001 selected source schema is not algorithm-visible track-state data." }
+Write-Output "TFL-ORG-RECHECK-001 selected historical source guard passed."

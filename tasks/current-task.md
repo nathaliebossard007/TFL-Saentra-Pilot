@@ -1,5 +1,19 @@
 # Current Task
 
+## AUTHORIZED — TFL-ORG-RECHECK-001 exploratory implementation
+
+Implement `TFL-ORG-RECHECK-001 v1.0` exactly as frozen on the selected
+historical DYNAMIC-001 algorithm-visible dataset. Serialize transformed/raw
+G/R/P outputs before evaluator interpretation, then stop at `REVIEW_REQUIRED`.
+
+Frozen files:
+
+- `experiments/TFL-ORG-RECHECK-001/v1.0/TFL-ORG-RECHECK-001_PROTOCOL_v1.0.md`
+- `experiments/TFL-ORG-RECHECK-001/v1.0/config/tfl_org_recheck_001_protocol_v1.json`
+- `experiments/TFL-ORG-RECHECK-001/v1.0/PROTOCOL_FREEZE.md`
+
+The prior protocol-freeze task follows for provenance.
+
 ## AUTHORIZED — TFL-ORG-RECHECK-001 protocol freeze only
 
 Use `docs/TFL-ORG-SNAPSHOT-001.md` as the working research anchor.

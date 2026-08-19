@@ -71,6 +71,14 @@
 - [x] Run v1.2.1 exploratory correction only; stop at review.
 - [ ] Do not execute classifier, benchmark, confirmatory, or held-out extensions.
 
+## TFL-ORG-RECHECK-001 v1.0
+
+- [x] Inventory historical candidates and select exactly one eligible source.
+- [x] Freeze G/R/P bases, counterfactuals, metrics, and cross-over criterion.
+- [x] Freeze protocol/config and hashes.
+- [ ] Implement on selected historical data and serialize raw outputs.
+- [ ] Stop at REVIEW_REQUIRED before interpretation.
+
 ## 2026-08-17 — DYNAMIC-001 v1.2.1 exploratory correction stopped at review
 
 - Applied only the frozen diagnostic corrections to unchanged v1.2 raw operator states for seeds 101–120.

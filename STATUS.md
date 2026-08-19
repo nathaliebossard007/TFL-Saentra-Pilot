@@ -68,7 +68,7 @@ Toy proof-of-concept — cross-over observed between large geometric change with
 Claim status — hypothesis-generating only; not yet reproduced on historical data
 
 TFL-ORG-RECHECK-001 v1.0:
-Status — PROTOCOL FREEZE AUTHORIZED; NOT YET IMPLEMENTED
+Status — PROTOCOL/CONFIG FROZEN; NOT YET IMPLEMENTED
 Purpose — limited historical-data G/R/P cross-over re-evaluation before any systematic TFL/RDL re-analysis
 Required bases — G geometry, R relation, P spectral/projector
 Dataset gate — exactly one eligible pre-existing historical dataset must be selected under frozen criteria before new cross-over metric inspection; if none exists, stop with NO ELIGIBLE HISTORICAL DATASET
@@ -81,7 +81,7 @@ Purpose — broader synthetic relational organizational-state equivalence experi
 Do not freeze or implement until TFL-ORG-RECHECK-001 historical-data gate has been reviewed.
 
 Current operational task:
-Freeze `TFL-ORG-RECHECK-001 v1.0` protocol/config against exactly one eligible historical dataset, or stop if no eligible historical dataset exists. Do not execute the pilot in the same task.
+Implement `TFL-ORG-RECHECK-001 v1.0` exactly as frozen on the selected historical dataset, serialize transformed/raw G/R/P outputs before evaluator interpretation, then stop at REVIEW_REQUIRED.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.

@@ -1,0 +1,16 @@
+{
+  "experiment": "TFL-ORG-RECHECK-001",
+  "protocol_version": "1.0",
+  "status": "frozen_protocol_only",
+  "selected_source": "experiments/TFL-UAS-DYNAMIC-001/data/algorithm_visible",
+  "sample_count_expected": 120,
+  "track_count": 4,
+  "bases": {"G": "physical pair distances and relative velocity magnitudes", "R": "top-two-incident normalized distance/direction graph", "P": "unit-edge normalized Laplacian"},
+  "condition_a": {"rotation_z_degrees": 37.0, "center_scale": 1.8, "preserve_relational_rule": "normalized distances and velocity direction"},
+  "condition_b": {"perturbation": "lexicographically first valid degree-preserving 2-switch", "preserve_positions": true},
+  "projector": {"rank": 2, "gap_min": 1e-6, "distance": "frobenius/sqrt(4)", "near_degenerate": "missing"},
+  "cross_over": {"a_mean_distance_change_min": 0.5, "a_relation_jaccard": 1.0, "a_p_distance_max": 1e-9, "b_distance_correlation_min": 0.95, "b_relation_jaccard_max": 0.8, "b_spectrum_distance_min": 0.1, "b_lambda2_change_min": 0.05},
+  "classifier": null,
+  "learned_parameters": false,
+  "execution_authorized": false
+}
