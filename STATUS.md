@@ -87,13 +87,14 @@ Scope — reuse frozen DYNAMIC-001 algorithm-visible source; preserve RECHECK NO
 Interpretation — not authorized; review gate active
 
 TFL-ORG-SYM-001 v1.0:
-Status — PROTOCOL/CONFIG FROZEN; NOT YET IMPLEMENTED
+Status — EXPLORATORY RUN COMPLETED; REVIEW REQUIRED
 Purpose — determine admissible organizational symmetries before quotienting
 Scope — reuse frozen DYNAMIC-001 algorithm-visible source; preserve RELREP insufficiency unchanged
-Interpretation — not authorized before exploratory execution and review
+Execution — 120 samples, 181 timestamps each; raw outputs serialized before interpretation
+Interpretation — not authorized; no symmetry outcome assigned
 
 Current operational task:
-Implement `TFL-ORG-SYM-001 v1.0` exactly as frozen, serialize labeled/structural outputs before interpretation, then stop at REVIEW_REQUIRED.
+Human review of `experiments/TFL-ORG-SYM-001/v1.0/REVIEW_REQUIRED.md`; do not assign a symmetry outcome or continue execution.
 
 TFL-UAS-001B confirmatory seeds 201–220 and held-out seeds 301–320 remain prohibited.
 No classifier, benchmark, confirmatory, or held-out extension is authorized.

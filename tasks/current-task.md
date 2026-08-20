@@ -1,5 +1,20 @@
 # Current Task
 
+## REVIEW_REQUIRED — TFL-ORG-SYM-001 v1.0 exploratory run
+
+The frozen exploratory implementation completed on 120 unchanged
+DYNAMIC-001 algorithm-visible samples. Raw outputs were serialized before
+interpretation and evaluator-only metadata was not loaded. Review the record
+at `experiments/TFL-ORG-SYM-001/v1.0/REVIEW_REQUIRED.md`.
+
+Do not assign `NONTRIVIAL_ORG_SYMMETRY_CANDIDATE`,
+`IDENTITY_ONLY_ON_SELECTED_SOURCE`, or `SYMMETRY_MODEL_INSUFFICIENT`, and do
+not execute confirmatory, held-out, classifier, or protocol-extension work
+until human review is documented.
+
+The authorized implementation task is complete and is retained below for
+provenance.
+
 ## AUTHORIZED — TFL-ORG-SYM-001 exploratory implementation
 
 Implement `TFL-ORG-SYM-001 v1.0` exactly as frozen, serialize labeled,

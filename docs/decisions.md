@@ -217,3 +217,16 @@
 - No representation outcome, classifier, learned representation, confirmatory, or held-out extension was assigned.
 - Source-count, schema, determinism, and frozen-protocol guards passed.
 - Automatic continuation stopped at `experiments/TFL-ORG-RELREP-001/v1.0/REVIEW_REQUIRED.md`.
+
+## 2026-08-20 — TFL-ORG-SYM-001 exploratory run stopped at review
+
+- Applied the frozen symmetry implementation to the unchanged 120-sample
+  DYNAMIC-001 algorithm-visible source with four stable tracks and 181
+  timestamps per sample.
+- Serialized raw labeled, structural, endpoint-reassignment, and named
+  operator-layer outputs before interpretation; evaluator-only metadata was
+  not loaded.
+- Role semantics remained unsupported. No classifier, confirmatory, held-out,
+  or scientific outcome assignment occurred.
+- Automatic continuation stopped at
+  `experiments/TFL-ORG-SYM-001/v1.0/REVIEW_REQUIRED.md`.

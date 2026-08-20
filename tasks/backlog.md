@@ -88,6 +88,17 @@
 - [ ] Implement labeled/structural symmetry outputs.
 - [ ] Stop at REVIEW_REQUIRED before interpretation.
 
+## 2026-08-20 — TFL-ORG-SYM-001 exploratory run stopped at review
+
+- Applied the frozen symmetry operators to the unchanged DYNAMIC-001
+  algorithm-visible source: 120 samples, four stable tracks, 181 timestamps.
+- Serialized raw labeled/structural/endpoint-reassignment/operator outputs
+  before interpretation; evaluator-only metadata was not loaded.
+- Role semantics remained unsupported; no classifier, confirmatory, or held-out
+  execution occurred.
+- Created `experiments/TFL-ORG-SYM-001/v1.0/REVIEW_REQUIRED.md`; no scientific
+  symmetry outcome was assigned.
+
 ## TFL-ORG-RELREP-001 v1.0
 
 - [x] Freeze dataset choice and provenance.
